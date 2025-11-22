@@ -1,0 +1,40 @@
+<nav style="border-bottom: 1px solid #e8e8e8; padding: 1rem 0; margin-bottom: 2rem; text-align: center;">
+  <div style="display: inline-flex; gap: 1.5rem; flex-wrap: wrap; align-items: center; justify-content: center;">
+    {% if page.url == '/' or page.url == '/index.html' %}
+      <a href="/" style="text-decoration: none; font-weight: 600; color: #333;">Home</a>
+    {% else %}
+      <a href="/" style="text-decoration: none; color: #666;">Home</a>
+    {% endif %}
+    
+    {% if page.url contains '/research/' %}
+      <a href="/research/" style="text-decoration: none; font-weight: 600; color: #333;">Research</a>
+    {% else %}
+      <a href="/research/" style="text-decoration: none; color: #666;">Research</a>
+    {% endif %}
+    
+    {% if page.url contains '/publications/' %}
+      <a href="/publications/" style="text-decoration: none; font-weight: 600; color: #333;">Publications</a>
+    {% else %}
+      <a href="/publications/" style="text-decoration: none; color: #666;">Publications</a>
+    {% endif %}
+    
+    {% if page.url contains '/teaching/' %}
+      <a href="/teaching/" style="text-decoration: none; font-weight: 600; color: #333;">Teaching</a>
+    {% else %}
+      <a href="/teaching/" style="text-decoration: none; color: #666;">Teaching</a>
+    {% endif %}
+    
+    {% if page.url contains '/news/' %}
+      <a href="/news/" style="text-decoration: none; font-weight: 600; color: #333;">News</a>
+    {% else %}
+      <a href="/news/" style="text-decoration: none; color: #666;">News</a>
+    {% endif %}
+    
+    {% if page.url contains '/about/' %}
+      <a href="/about/" style="text-decoration: none; font-weight: 600; color: #333;">About</a>
+    {% else %}
+      <a href="/about/" style="text-decoration: none; color: #666;">About</a>
+    {% endif %}
+  </div>
+</nav>
+

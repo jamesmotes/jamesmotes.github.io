@@ -1,0 +1,37 @@
+/* Override theme's fixed header positioning */
+header {
+  position: static !important;
+}
+
+.wrapper > header {
+  position: static !important;
+}
+
+/* Ensure no fixed positioning on any header elements */
+body > .wrapper > header {
+  position: static !important;
+}
+
+/* Fix list alignment for publications */
+ol, ul {
+  padding-left: 1.5em;
+}
+
+ol li, ul li {
+  margin-bottom: 0.75em;
+  padding-left: 0.5em;
+  list-style-position: outside;
+}
+
+ol li p, ul li p {
+  margin: 0;
+  padding-left: 0;
+  text-indent: 0;
+}
+
+/* Ensure consistent alignment for multi-line list items */
+ol li > *, ul li > * {
+  margin-left: 0;
+  padding-left: 0;
+}
+

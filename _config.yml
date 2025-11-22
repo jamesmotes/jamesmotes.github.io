@@ -1,3 +1,12 @@
 theme: jekyll-theme-minimal
-title: James Motes Homepage
-description: Overview of faculty candidate information
+title: James Motes
+description: Computer Science and Robotics Faculty Candidate
+
+# Navigation
+header_pages:
+  - index.md
+  - research.md
+  - publications.md
+  - teaching.md
+  - news.md
+  - about.md
