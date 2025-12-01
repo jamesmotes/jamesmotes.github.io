@@ -18,7 +18,7 @@ permalink: /news/
 
 - **2025-05** – "PRISM: Complete Online Decentralized Multi-Agent Pathfinding" posted to arXiv. [arXiv:2505.08025](https://arxiv.org/abs/2505.08025)
 
-- **2025-04** – "Lazy-DaSH: Lazy Approach for Hypergraph-based Multi-robot Task and Motion Planning" posted to arXiv. [arXiv:2504.05552](https://arxiv.org/abs/2504.05552) | [Video](https://www.youtube.com/watch?v=3eHOzTikcXc)
+- **2025-04** – "Lazy-DaSH: Lazy Approach for Hypergraph-based Multi-robot Task and Motion Planning" posted to arXiv. [arXiv:2504.05552](https://arxiv.org/abs/2504.05552) [Video](https://www.youtube.com/watch?v=3eHOzTikcXc)
 
 - **2024-11** – "Experience-based Subproblem Planning for Multi-Robot Motion Planning" posted to arXiv. [arXiv:2411.08851](https://arxiv.org/abs/2411.08851)
 
