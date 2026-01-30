@@ -11,7 +11,9 @@ permalink: /
 _Postdoctoral Researcher, University of Illinois Urbana Champaign_  
 _On the 2025–26 faculty job market in Computer Science, ECE, and Robotics._
 
-**Email**: [jmotes2@illinois.edu](mailto:jmotes2@illinois.edu) | **Documents**: <a href="/assets/CV/james_motes_cv.pdf" download>CV</a> | <a href="/assets/documents/james_motes_research_statement.pdf" download>Research</a> | <a href="/assets/documents/james_motes_teaching_statement.pdf" download>Teaching</a> | **Profiles:** [Google Scholar](https://scholar.google.com/citations?user=O_Zne90AAAAJ&hl=en&oi=ao) | [Parasol Lab](https://www.parasollab.web.illinois.edu/people/postdocs/jmotes2/) 
+**Email**: [jmotes2@illinois.edu](mailto:jmotes2@illinois.edu)  
+**Documents**: <a href="/assets/CV/james_motes_cv.pdf" download>CV</a> | <a href="/assets/documents/james_motes_research_statement.pdf" download>Research</a> | <a href="/assets/documents/james_motes_teaching_statement.pdf" download>Teaching</a>  
+**Profiles:** [Google Scholar](https://scholar.google.com/citations?user=O_Zne90AAAAJ&hl=en&oi=ao) | [Parasol Lab](https://www.parasollab.web.illinois.edu/people/postdocs/jmotes2/) 
 
 I design intelligent multi-robot and human-robot planning frameworks and hardware/software accelerations for real-world robotic deployments.
 
