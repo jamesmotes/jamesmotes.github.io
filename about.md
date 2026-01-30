@@ -32,13 +32,19 @@ permalink: /about/
     <p style="margin: 1rem 0 0 0;">He is currently located in Houston, Texas with his wife, Lauren, and daughter, Atlas.</p>
   </div>
   <div style="flex-shrink: 0;">
-    <img src="/assets/images/james_atlas.jpg" alt="James Motes with Atlas" style="max-width: 250px; height: auto; border-radius: 4px;" />
+    <img src="/assets/images/family.jpg" alt="James Motes with Atlas" style="max-width: 250px; height: auto; border-radius: 4px;" />
   </div>
 </div>
 
 ---
 
-## Curriculum Vitae
+## Curriculum Vitae and Personal Statements
 
 [Download CV (PDF)](/assets/CV/james_motes_cv.pdf)
+
+[Download Research Statement](/assets/documents/james_motes_research_statement.pdf)
+
+[Download Teaching Statement](/assets/documents/james_motes_teaching_statement.pdf)
+
+
 

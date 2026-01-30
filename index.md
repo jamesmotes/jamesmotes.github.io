@@ -11,7 +11,7 @@ permalink: /
 _Postdoctoral Researcher, University of Illinois Urbana Champaign_  
 _On the 2025–26 faculty job market in Computer Science, ECE, and Robotics._
 
-**Email**: [jmotes2@illinois.edu](mailto:jmotes2@illinois.edu) | [Google Scholar](https://scholar.google.com/citations?user=O_Zne90AAAAJ&hl=en&oi=ao)
+**Email**: [jmotes2@illinois.edu](mailto:jmotes2@illinois.edu) | **Documents**: <a href="/assets/CV/james_motes_cv.pdf" download>CV</a> | <a href="/assets/documents/james_motes_research_statement.pdf" download>Research</a> | <a href="/assets/documents/james_motes_teaching_statement.pdf" download>Teaching</a> | **Profiles:** [Google Scholar](https://scholar.google.com/citations?user=O_Zne90AAAAJ&hl=en&oi=ao) | [Parasol Lab](https://www.parasollab.web.illinois.edu/people/postdocs/jmotes2/) 
 
 I design intelligent multi-robot and human-robot planning frameworks and hardware/software accelerations for real-world robotic deployments.
 
@@ -48,8 +48,9 @@ Lazy-DaSH demonstrates efficient multi-robot task and motion planning using a la
 
 ## Recent Highlights
 
-- **2025-11** – "An Analysis of Constraint-Based Multi-Agent Pathfinding Algorithms" accepted to IEEE Transactions on Robotics (to appear 2026).
-- **2025-10** – ERUPT: An Open Toolkit for Interfacing with Robot Motion Planners in Extended Reality posted to arXiv.
-- **2025-08** – "K-ARC: Adaptive Robot Coordination for Multi-Robot Kinodynamic Planning" published in IEEE RA-L.
+- **2026-1** – "Scalable Multi-Robot Motion Planning Using Guidance-Informed Hypergraphs" conditionally accepted to IEEE Robotics and Automation Letters. [arxiv:2311.10176](https://arxiv.org/pdf/2311.10176)
+- **2026-1** – "Lazy-DaSH: Lazy Approach for Hypergraph-based Multi-Robot Task and Motion Planning" conditionally accepted to IEEE Transactions on Robotics. [arxiv:2504.05552](https://arxiv.org/pdf/2504.05552)
+- **2025-11** – "An Analysis of Constraint-Based Multi-Agent Pathfinding Algorithms" accepted to IEEE Transactions on Robotics (to appear 2026). [IEEE T-RO](https://ieeexplore.ieee.org/iel8/8860/11297026/11288072.pdf)
+
 
 [View all news →](/news/)
