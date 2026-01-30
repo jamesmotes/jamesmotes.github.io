@@ -18,27 +18,27 @@ PUBLICATIONS (14, Google Scholar citations = 329, h = 7 as of 01/30/2026) **dire
 2. **Hypergraph-based multi-robot task and motion planning**  
    **James D. Motes**, T. Chen, T. Bretl, M. M. Aguirre, and N. M. Amato  
    _IEEE Transactions on Robotics (T-RO)_, 2023. Presented at ICRA 2024, Yokohama, Japan.  
-   [IEEE](https://ieeexplore.ieee.org/abstract/document/10229933/) | [PDF](https://ieeexplore.ieee.org/iel7/8860/4359257/10229933.pdf) | [Code](TODO_JM)
+   [IEEE](https://ieeexplore.ieee.org/abstract/document/10229933/) | [Video](https://www.youtube.com/watch?v=MSyeYXu0Xzs)
 
 3. **K-ARC: Adaptive Robot Coordination for Multi-Robot Kinodynamic Planning**  
    M. Qin,** I. Solis,** James D. Motes, M. Morales, and N. M. Amato  
    _IEEE Robotics and Automation Letters (RA-L)_, 2025. To be presented at ICRA 2026, Vienna, Austria.  
-   [IEEE](https://ieeexplore.ieee.org/abstract/document/11112683/) | [PDF](https://ieeexplore.ieee.org/iel8/7083369/7339444/11112683.pdf) | [Code](TODO_JM)
+   [IEEE](https://ieeexplore.ieee.org/abstract/document/11112683/)
 
 4. **Adaptive robot coordination: A subproblem-based approach for hybrid multi-robot motion planning (ARC)**  
    I. Solis,** James D. Motes, M. Qin,** M. Morales, and N. M. Amato  
    _IEEE Robotics and Automation Letters (RA-L)_, 2024. Presented at ICRA@40, Rotterdam, Netherlands, September 2024.  
-   [IEEE](https://ieeexplore.ieee.org/abstract/document/10577245/) | [PDF](https://ieeexplore.ieee.org/iel8/7083369/10561888/10577245.pdf) | [Code](TODO_JM)
+   [IEEE](https://ieeexplore.ieee.org/abstract/document/10577245/)
 
 5. **Scalable Multi-Robot Motion Planning Using Guidance-Informed Hypergraphs (Workspace Guided DaSH)**  
    C. McBeth,** James D. Motes, I. Ngui,** M. Morales, and N. M. Amato  
    _IEEE Robotics and Automation Letters (RA-L)_, conditionally accepted, 2026.  
-   [arXiv](https://arxiv.org/abs/2311.10176) | [Code](TODO_JM)
+   [arXiv](https://arxiv.org/abs/2311.10176)
 
 6. **An Analysis of Constraint-Based Multi-Agent Pathfinding Algorithms**  
    H. Lee,** James D. Motes, M. Morales, and N. M. Amato  
    _IEEE Transactions on Robotics (T-RO)_, to appear, 2026.  
-   [IEEE](TODO_JM) <!-- Link will be available when published -->
+   [IEEE](https://ieeexplore.ieee.org/iel8/8860/11297026/11288072.pdf)
 
 ---
 
