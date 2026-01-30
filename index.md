@@ -50,7 +50,7 @@ Lazy-DaSH demonstrates efficient multi-robot task and motion planning using a la
 
 - **2026-1** – "Scalable Multi-Robot Motion Planning Using Guidance-Informed Hypergraphs" conditionally accepted to IEEE Robotics and Automation Letters. [arxiv:2311.10176](https://arxiv.org/pdf/2311.10176)
 - **2026-1** – "Lazy-DaSH: Lazy Approach for Hypergraph-based Multi-Robot Task and Motion Planning" conditionally accepted to IEEE Transactions on Robotics. [arxiv:2504.05552](https://arxiv.org/pdf/2504.05552)
-- **2025-11** – "An Analysis of Constraint-Based Multi-Agent Pathfinding Algorithms" accepted to IEEE Transactions on Robotics (to appear 2026). [IEEE T-RO](https://ieeexplore.ieee.org/iel8/8860/11297026/11288072.pdf)
+- **2025-11** – "An Analysis of Constraint-Based Multi-Agent Pathfinding Algorithms" accepted to IEEE Transactions on Robotics (to appear 2026). [IEEE](https://ieeexplore.ieee.org/iel8/8860/11297026/11288072.pdf)
 
 
 [View all news →](/news/)
