@@ -47,32 +47,33 @@ PUBLICATIONS (14, Google Scholar citations = 329, h = 7 as of 01/30/2026) **dire
 **2026**
 - C. McBeth,** James D. Motes, I. Ngui,** M. Morales, and N. M. Amato. Scalable Multi-Robot Motion Planning Using Guidance-Informed Hypergraphs. _IEEE Robotics and Automation Letters (RA-L)_. Conditionally accepted, 2026. [arXiv](https://arxiv.org/abs/2311.10176)
 - S. Lee,** James D. Motes, I. Ngui,** M. Morales, and N. M. Amato. Lazy-DaSH: Lazy Approach for Hypergraph-based Multi-Robot Task and Motion Planning. _IEEE Transactions on Robotics (T-RO)_. Conditionally accepted, 2026. [arXiv](https://arxiv.org/abs/2504.05552)
-- H. Lee,** James D. Motes, M. Morales, and N. M. Amato. An Analysis of Constraint-Based Multi-Agent Pathfinding Algorithms. _IEEE Transactions on Robotics (T-RO)_. To appear, 2026.
+- H. Lee,** James D. Motes, M. Morales, and N. M. Amato. An Analysis of Constraint-Based Multi-Agent Pathfinding Algorithms. _IEEE Transactions on Robotics (T-RO)_. To appear, 2026. [IEEE](https://ieeexplore.ieee.org/abstract/document/11288072)
 
 **2025**
-- M. Qin,** I. Solis,** James D. Motes, M. Morales, and N. M. Amato. K-ARC: Adaptive Robot Coordination for Multi-Robot Kinodynamic Planning. _IEEE Robotics and Automation Letters (RA-L)_, 2025. To be presented at IEEE International Conference on Robotics and Automation (ICRA), Vienna, Austria, June 2026. [IEEE](https://ieeexplore.ieee.org/abstract/document/11112683/) | [PDF](https://ieeexplore.ieee.org/iel8/7083369/7339444/11112683.pdf)
-- A. Goddu, T. Brown, M. Paton, James D. Motes, and T. Chen. Modifying ABIT* for Tethered Rappelling Robot Motion Planning. In _Proc. 2025 IEEE 21st International Conference on Automation Science and Engineering (CASE)_, pp. 722–728, 2025.
+- M. Qin,** I. Solis,** James D. Motes, M. Morales, and N. M. Amato. K-ARC: Adaptive Robot Coordination for Multi-Robot Kinodynamic Planning. _IEEE Robotics and Automation Letters (RA-L)_, 2025. To be presented at IEEE International Conference on Robotics and Automation (ICRA), Vienna, Austria, June 2026. [IEEE](https://ieeexplore.ieee.org/abstract/document/11112683/)
+- A. Goddu, T. Brown, M. Paton, James D. Motes, and T. Chen. Modifying ABIT* for Tethered Rappelling Robot Motion Planning. In _Proc. 2025 IEEE 21st International Conference on Automation Science and Engineering (CASE)_, pp. 722–728, 2025. [IEEE](https://ieeexplore.ieee.org/abstract/document/11164046/)
 
 **2024**
-- I. Solis,** James D. Motes, M. Qin,** M. Morales, and N. M. Amato. Adaptive Robot Coordination: A Subproblem-based Approach for Hybrid Multi-Robot Motion Planning. _IEEE Robotics and Automation Letters (RA-L)_, 2024. Presented at IEEE ICRA@40, Rotterdam, The Netherlands, Sept. 2024. [IEEE](https://ieeexplore.ieee.org/abstract/document/10577245/) | [PDF](https://ieeexplore.ieee.org/iel8/7083369/10561888/10577245.pdf)
-- S. Ashur, M. Lusardi, M. Markowicz, James D. Motes, M. Morales, S. Har-Peled, and N. M. Amato. SPITE: Simple Polyhedral Intersection Techniques for Modified Environments. In _Algorithmic Foundations of Robotics XVI: Proc. the Sixteenth Workshop on the Algorithmic Foundations of Robotics_, 2024.
+- I. Solis,** James D. Motes, M. Qin,** M. Morales, and N. M. Amato. Adaptive Robot Coordination: A Subproblem-based Approach for Hybrid Multi-Robot Motion Planning. _IEEE Robotics and Automation Letters (RA-L)_, 2024. Presented at IEEE ICRA@40, Rotterdam, The Netherlands, Sept. 2024. [IEEE](https://ieeexplore.ieee.org/abstract/document/10577245/)
+- S. Ashur, M. Lusardi, M. Markowicz, James D. Motes, M. Morales, S. Har-Peled, and N. M. Amato. SPITE: Simple Polyhedral Intersection Techniques for Modified Environments. In _Algorithmic Foundations of Robotics XVI: Proc. the Sixteenth Workshop on the Algorithmic Foundations of Robotics_, 2024. [arXiv](https://arxiv.org/pdf/2407.00259)
 
 **2023**
-- C. McBeth,** James D. Motes, D. Uwacu, M. Morales, and N. M. Amato. Scalable Multi-Robot Motion Planning for Congested Environments With Topological Guidance. _IEEE Robotics and Automation Letters (RA-L)_, 2023. Presented at IEEE International Conference on Robotics and Automation (ICRA), Yokohama, Japan, May 2024. [IEEE](TODO_JM)
-- James D. Motes, T. Chen, T. Bretl, M. M. Aguirre, and N. M. Amato. Hypergraph-Based Multi-Robot Task and Motion Planning. _IEEE Transactions on Robotics (T-RO)_, 2023. Presented at IEEE International Conference on Robotics and Automation (ICRA), Yokohama, Japan, May 2024. [IEEE](https://ieeexplore.ieee.org/abstract/document/10229933/) | [PDF](https://ieeexplore.ieee.org/iel7/8860/4359257/10229933.pdf)
-
-**2021**
-- H. Lee,** James D. Motes, M. Morales, and N. M. Amato. Parallel Hierarchical Composition Conflict-Based Search for Optimal Multi-Agent Pathfinding. _IEEE Robotics and Automation Letters (RA-L)_, vol. 6, no. 4, pp. 7001–7008, 2021. Presented at IEEE International Conference on Intelligent Robots and Systems (IROS), Prague, Czech Republic, 2021 (virtual).
-- I. Solis,** James D. Motes, R. Sandström, and N. M. Amato. Roadmap-Optimal Multi-Robot Motion Planning Using Conflict-Based Search. _IEEE Robotics and Automation Letters (RA-L)_, vol. 6, no. 3, pp. 4608–4615, 2021. Presented at IEEE International Conference on Robotics and Automation (ICRA), Xi'an, China, 2021 (virtual).
-
-**2020**
-- James D. Motes, R. Sandström, H. Lee,** S. Thomas, and N. M. Amato. Multi-Robot Task and Motion Planning With Subtask Dependencies. _IEEE Robotics and Automation Letters (RA-L)_, vol. 5, no. 2, pp. 3338–3345, 2020. Presented at IEEE International Conference on Robotics and Automation (ICRA), Paris, France, 2020 (virtual).
-
-**2019**
-- James D. Motes, R. Sandström, W. Adams, T. Ogunyale,** S. Thomas, and N. M. Amato. Interaction Templates for Multi-Robot Systems. _IEEE Robotics and Automation Letters (RA-L)_, vol. 4, no. 3, pp. 2926–2933, 2019. Presented at IEEE International Conference on Intelligent Robots and Systems (IROS), Macao, China, 2019.
+- C. McBeth,** James D. Motes, D. Uwacu, M. Morales, and N. M. Amato. Scalable Multi-Robot Motion Planning for Congested Environments With Topological Guidance. _IEEE Robotics and Automation Letters (RA-L)_, 2023. Presented at IEEE International Conference on Robotics and Automation (ICRA), Yokohama, Japan, May 2024. [IEEE](https://ieeexplore.ieee.org/iel7/7083369/10254630/10243143.pdf)
+- James D. Motes, T. Chen, T. Bretl, M. M. Aguirre, and N. M. Amato. Hypergraph-Based Multi-Robot Task and Motion Planning. _IEEE Transactions on Robotics (T-RO)_, 2023. Presented at IEEE International Conference on Robotics and Automation (ICRA), Yokohama, Japan, May 2024. [IEEE](https://ieeexplore.ieee.org/abstract/document/10229933/)
 
 **2022**
-- T. Chen, Z. Huang, James D. Motes, J. Geng, Q. Ta, H. Dinkel, H. Abdul-Rashid, J. Myers, Y. Mun, W. Lin, Y. Huang, S. Liu, M. Morales, N. M. Amato, K. Driggs-Campbell, and T. Bretl. Insights from an Industrial Collaborative Assembly Project: Lessons in Research and Collaboration. In _IEEE ICRA Workshop on Collaborative Robots and the Work of the Future_, Philadelphia, USA, 2022.
+- T. Chen, Z. Huang, James D. Motes, J. Geng, Q. Ta, H. Dinkel, H. Abdul-Rashid, J. Myers, Y. Mun, W. Lin, Y. Huang, S. Liu, M. Morales, N. M. Amato, K. Driggs-Campbell, and T. Bretl. Insights from an Industrial Collaborative Assembly Project: Lessons in Research and Collaboration. In _IEEE ICRA Workshop on Collaborative Robots and the Work of the Future_, Philadelphia, USA, 2022. [arXiv](https://arxiv.org/abs/2205.14340)
+
+**2021**
+- H. Lee,** James D. Motes, M. Morales, and N. M. Amato. Parallel Hierarchical Composition Conflict-Based Search for Optimal Multi-Agent Pathfinding. _IEEE Robotics and Automation Letters (RA-L)_, vol. 6, no. 4, pp. 7001–7008, 2021. Presented at IEEE International Conference on Intelligent Robots and Systems (IROS), Prague, Czech Republic, 2021 (virtual). [IEEE](https://ieeexplore.ieee.org/abstract/document/9483630/)
+- I. Solis,** James D. Motes, R. Sandström, and N. M. Amato. Representation-Optimal Multi-Robot Motion Planning Using Conflict-Based Search. _IEEE Robotics and Automation Letters (RA-L)_, vol. 6, no. 3, pp. 4608–4615, 2021. Presented at IEEE International Conference on Robotics and Automation (ICRA), Xi'an, China, 2021 (virtual). [IEEE](https://ieeexplore.ieee.org/abstract/document/9387143)
+
+**2020**
+- James D. Motes, R. Sandström, H. Lee,** S. Thomas, and N. M. Amato. Multi-Robot Task and Motion Planning With Subtask Dependencies. _IEEE Robotics and Automation Letters (RA-L)_, vol. 5, no. 2, pp. 3338–3345, 2020. Presented at IEEE International Conference on Robotics and Automation (ICRA), Paris, France, 2020 (virtual). [IEEE](https://ieeexplore.ieee.org/abstract/document/9013090/)
+
+**2019**
+- James D. Motes, R. Sandström, W. Adams, T. Ogunyale,** S. Thomas, and N. M. Amato. Interaction Templates for Multi-Robot Systems. _IEEE Robotics and Automation Letters (RA-L)_, vol. 4, no. 3, pp. 2926–2933, 2019. Presented at IEEE International Conference on Intelligent Robots and Systems (IROS), Macao, China, 2019. [IEEE](https://ieeexplore.ieee.org/abstract/document/8737744/)
+
 
 ---
 
@@ -95,10 +96,10 @@ PUBLICATIONS (14, Google Scholar citations = 329, h = 7 as of 01/30/2026) **dire
 - Isaac Ngui*, Courtney McBeth*, James D. Motes, Marco Morales, and Nancy M. Amato. Scalable Multi-Robot Motion Planning via Hierarchical Subproblem Expansion and Workspace Decomposition Refinement. *Equal contribution.
 - Y. Arad,** M. Markowicz,** S. Ashur, James D. Motes, M. Morales, and N. M. Amato. Serialized Red-Green-Gray: A Quick Heuristic Validation of Edges in Dynamic Roadmap Graphs.
 - M. Markowicz,** Y. Arad,** S. Ashur, James D. Motes, M. Morales, and N. M. Amato. Greedy Lazy SPITE: Heuristic Validation and Lazy Motion Planning With Dynamic Roadmap Graphs.
-- I. Ngui, C. McBeth, A. Santos, G. He, K. J. Mimnaugh, James D. Motes, L. Soares, M. Morales, and N. M. Amato. ERUPT: An Open Toolkit for Interfacing with Robot Motion Planners in Extended Reality. [arXiv:2510.02464](https://arxiv.org/abs/2510.02464), 2025.
-- H. Lee,** Z. Serlin, James D. Motes, B. Long, M. Morales, and N. M. Amato. PRISM: Complete Online Decentralized Multi-Agent Pathfinding With Rapid Information Sharing Using Motion Constraints. [arXiv:2505.08025](https://arxiv.org/abs/2505.08025), 2025.
-- I. Solis,** James D. Motes, M. Qin,** M. Morales, and N. M. Amato. Experience-Based Subproblem Planning for Multi-Robot Motion Planning. [arXiv:2411.08851](https://arxiv.org/abs/2411.08851), 2024.
-- A. Attali, S. Ashur, I. B. Love,** C. McBeth,** James D. Motes, D. Uwacu, M. Morales, and N. M. Amato. A Framework for Guided Motion Planning. [arXiv:2404.03133](https://arxiv.org/abs/2404.03133), 2024.
+- I. Ngui, C. McBeth, A. Santos, G. He, K. J. Mimnaugh, James D. Motes, L. Soares, M. Morales, and N. M. Amato. ERUPT: An Open Toolkit for Interfacing with Robot Motion Planners in Extended Reality. [arXiv](https://arxiv.org/abs/2510.02464)
+- H. Lee,** Z. Serlin, James D. Motes, B. Long, M. Morales, and N. M. Amato. PRISM: Complete Online Decentralized Multi-Agent Pathfinding With Rapid Information Sharing Using Motion Constraints. [arXiv](https://arxiv.org/abs/2505.08025)
+- I. Solis,** James D. Motes, M. Qin,** M. Morales, and N. M. Amato. Experience-Based Subproblem Planning for Multi-Robot Motion Planning. [arXiv](https://arxiv.org/abs/2411.08851)
+- A. Attali, S. Ashur, I. B. Love,** C. McBeth,** James D. Motes, D. Uwacu, M. Morales, and N. M. Amato. A Framework for Guided Motion Planning. [arXiv](https://arxiv.org/abs/2404.03133)
 
 ---
 
