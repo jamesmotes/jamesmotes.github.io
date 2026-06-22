@@ -1,6 +1,6 @@
 theme: jekyll-theme-minimal
-title: James Motes
-description: Computer Science and Robotics Faculty Candidate
+title: James D. Motes
+description: Adaptive planning for human-steerable robot teams
 
 # Navigation
 header_pages:
@@ -8,5 +8,11 @@ header_pages:
   - research.md
   - publications.md
   - teaching.md
-  - news.md
-  - about.md
+  - demos.md
+  - cv.md
+
+exclude:
+  - LOCAL_PREVIEW.md
+  - motes_homepage_revisions_codex_prompt.md
+  - motes_personal_website_codex_prompt.md
+  - updated_cv.pdf
