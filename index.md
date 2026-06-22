@@ -33,7 +33,7 @@ body_class: home-page
     <div class="profile-statement">
       <h2>Adaptive planning for robot teams people can guide.</h2>
       <p class="intro-pitch">
-        I build planning systems that keep robot teams scalable by coordinating only where the problem demands it. My faculty lab will make those systems faster, more interactive, and easier for people to guide through language, visualization, and shared task representations.
+        I build planning systems that keep robot teams scalable by coordinating only where the problem demands it. My future lab will make those systems faster, more interactive, and easier for people to guide through language, visualization, and shared task representations.
       </p>
     </div>
   </section>
