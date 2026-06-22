@@ -1,0 +1,93 @@
+research_directions_intro: "My work asks three connected questions: when should robot teams coordinate, how can that coordination run fast enough to use, and how can people guide the resulting plans?"
+
+research_program_thrusts:
+  - label: "Direction 01"
+    title: "Adaptive Robot-Team Planning"
+    tagline: "Coordinate only where the problem demands it."
+    summary: "Large robot teams should not default to one full joint planning space, where the search can grow exponentially with every robot, object, and task dependency. I design planners that start from decomposed robot, object, task, and workspace models, then add coordination around the interactions that create real bottlenecks. This line of work studies how task structure, workspace structure, and discovered motion conflicts can guide when robots plan independently, locally together, or as a fully coupled team."
+    publications:
+      - title: "Lazy-DaSH: Lazy Approach for Hypergraph-Based Multi-Robot Task and Motion Planning"
+        venue: "IEEE Transactions on Robotics, 2026"
+      - title: "Adaptive Robot Coordination: A Subproblem-Based Approach for Hybrid Multi-Robot Motion Planning"
+        venue: "IEEE Robotics and Automation Letters, 2024"
+      - title: "Hypergraph-Based Multi-Robot Task and Motion Planning"
+        venue: "IEEE Transactions on Robotics, 2023"
+  - label: "Direction 02"
+    title: "Fast Planning Infrastructure"
+    tagline: "Make the repeated planning operations cheap enough to matter."
+    summary: "Scalable robot-team planning depends on the speed of the low-level operations that planners call repeatedly: collision checking, roadmap validation, conflict detection, and replanning after the world changes. My work develops dynamic roadmap representations, approximation-based validation methods, reusable subproblem structure, and parallel or GPU-friendly planning operations. These tools make adaptive planning practical by reducing the cost of the primitives that usually dominate runtime."
+    publications:
+      - title: "P-ARC: Exploiting Subproblem Independence for Parallel Multi-Robot Motion Planning"
+        venue: "Under review"
+      - title: "Multi-Robot Motions in Milliseconds: Vector-Accelerated Primitives for Sampling-Based Planning"
+        venue: "Under review"
+      - title: "SPITE: Simple Polyhedral Intersection Techniques for Modified Environments"
+        venue: "WAFR, 2024"
+  - label: "Direction 03"
+    title: "Human-Steerable Planning"
+    tagline: "Let people specify, inspect, and revise robot behavior."
+    summary: "Robot teams should be usable by people who are not motion planning experts. This emerging direction extends my planning work toward interfaces and representations that let users express preferences in language, inspect planned motions in extended reality, and revise tasks or constraints without editing planner internals. In collaborative planning, people provide intent and context while planners preserve feasibility, safety, and coordination."
+    publications:
+      - title: "ERUPT: An Open Toolkit for Interfacing with Robot Motion Planners in Extended Reality"
+        venue: "Under review"
+      - title: "Object-Centric Reasoning for Behavior with Instruction-Conditioned Trajectories"
+        venue: "Under review"
+
+video_demos:
+  - title: "Lazy-DaSH: Multi-Robot Rearrangement"
+    caption: "Lazy-DaSH demonstrates efficient multi-robot task and motion planning using a lazy approach to hypergraph-based planning."
+    embed_url: "https://www.youtube.com/embed/3eHOzTikcXc"
+    link_label: "Demo details"
+    href: "/demos/"
+
+selected_publications:
+  - label: "Publication 01"
+    title: "[Selected publication 1 placeholder]"
+    full_title: "[Full paper title placeholder]"
+    venue: "[Venue and year placeholder]"
+    summary: "Placeholder for a one-sentence contribution summary that anchors one of the research themes above."
+    links:
+      - label: "Paper"
+        href: "/publications/"
+      - label: "Video"
+        href: "/demos/"
+  - label: "Publication 02"
+    title: "[Selected publication 2 placeholder]"
+    full_title: "[Full paper title placeholder]"
+    venue: "[Venue and year placeholder]"
+    summary: "Placeholder for a second concise contribution summary connected to the future lab agenda."
+    links:
+      - label: "Paper"
+        href: "/publications/"
+  - label: "Publication 03"
+    title: "[Selected publication 3 placeholder]"
+    full_title: "[Full paper title placeholder]"
+    venue: "[Venue and year placeholder]"
+    summary: "Placeholder for a third representative contribution, selected for coherence rather than completeness."
+    links:
+      - label: "Paper"
+        href: "/publications/"
+
+teaching_cards:
+  - title: "How I teach"
+    description: "Project-based, research-led courses that connect theory to working systems."
+    details:
+      - "Active learning"
+      - "Backward course design"
+      - "Cumulative projects"
+      - "Reproducible experimental practice"
+  - title: "What I can teach"
+    description: "Courses across robotics, AI, algorithms, motion planning, and autonomous systems."
+    details:
+      - "Introductory AI"
+      - "Robotics"
+      - "Algorithms"
+      - "Task and motion planning"
+      - "Human-robot interaction"
+  - title: "How I mentor"
+    description: "Structured mentoring that gives students ownership while developing communication, leadership, and research independence."
+    details:
+      - "Hierarchical lab mentoring"
+      - "Regular research check-ins"
+      - "Writing and presentation practice"
+      - "Student leadership opportunities"
