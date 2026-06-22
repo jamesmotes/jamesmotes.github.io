@@ -2,6 +2,8 @@
 layout: page
 title: News
 permalink: /news/
+published: false
+sitemap: false
 ---
 
 {% include navigation.html %}

@@ -5,10 +5,7 @@ description: Adaptive planning for human-steerable robot teams
 # Navigation
 header_pages:
   - index.md
-  - research.md
   - publications.md
-  - teaching.md
-  - demos.md
   - cv.md
 
 exclude:

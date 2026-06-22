@@ -3,6 +3,8 @@ layout: page
 title: Research Vision
 permalink: /research/
 body_class: standard-page
+published: false
+sitemap: false
 ---
 
 {% include navigation.html %}

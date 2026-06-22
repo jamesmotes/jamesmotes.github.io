@@ -187,6 +187,19 @@ sitemap: false
     </div>
   </section>
 
+  <section class="page-section search-materials about-materials" aria-labelledby="about-downloads">
+    <div>
+      <h2 id="about-downloads">Faculty Search Materials</h2>
+      <p>
+        I am especially interested in departments and institutes building strength in robotics, AI planning, autonomous systems, human-robot interaction, multi-agent systems, and intelligent physical systems.
+      </p>
+    </div>
+    <nav class="profile-links" aria-label="Faculty search materials">
+      <a href="/assets/CV/james_motes_cv.pdf">CV</a>
+      <a href="mailto:jmotes2@illinois.edu">Email</a>
+    </nav>
+  </section>
+
   <section class="page-section" aria-labelledby="translation">
     <div class="section-heading full-width-heading">
       <h2 id="translation">Research Translation</h2>
@@ -217,18 +230,5 @@ sitemap: false
         </div>
       </article>
     </div>
-  </section>
-
-  <section class="page-section search-materials about-materials" aria-labelledby="about-downloads">
-    <div>
-      <h2 id="about-downloads">Faculty Search Materials</h2>
-      <p>
-        I am especially interested in departments and institutes building strength in robotics, AI planning, autonomous systems, human-robot interaction, multi-agent systems, and intelligent physical systems.
-      </p>
-    </div>
-    <nav class="profile-links" aria-label="Faculty search materials">
-      <a href="/assets/CV/james_motes_cv.pdf">CV</a>
-      <a href="mailto:jmotes2@illinois.edu">Email</a>
-    </nav>
   </section>
 </main>

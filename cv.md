@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CV
-permalink: /cv.html
+permalink: /cv/
 body_class: standard-page
 ---
 
@@ -45,34 +45,6 @@ body_class: standard-page
     <h2 id="cv-academic-appointment">Academic Appointment</h2>
     <div class="cv-list">
       <p><span class="cv-date">2023-present</span> <span class="cv-separator">-</span> Postdoctoral Researcher, University of Illinois Urbana-Champaign, Parasol Lab. Advisor: Nancy M. Amato</p>
-    </div>
-  </section>
-
-  <section class="cv-section" aria-labelledby="cv-industry-translation">
-    <h2 id="cv-industry-translation">Industry, Entrepreneurship &amp; Research Translation</h2>
-    <div class="cv-list">
-      <article class="cv-entry">
-        <p><span class="cv-date">2019-2023</span> <span class="cv-separator">-</span> Industrial Human-Robot Factory Collaboration, UIUC</p>
-        <ul class="cv-sublist">
-          <li>Collaborated with Foxconn Interconnect Technologies and UIUC research groups led by Timothy Bretl and Katherine Driggs-Campbell on collaborative human-robot factory projects</li>
-          <li>Connected multi-robot task and motion planning research to industrial assembly and human-robot collaboration settings</li>
-        </ul>
-      </article>
-      <article class="cv-entry">
-        <p><span class="cv-date">2023-2025</span> <span class="cv-separator">-</span> Founder, Normandy Automation</p>
-        <ul class="cv-sublist">
-          <li>Developed autonomous robotic manufacturing concepts for just-in-time manufacturing with minimal human reprogramming</li>
-          <li>Leveraged AI and multi-robot systems for autonomous welding and CNC machine-tending workflows</li>
-          <li>Wrote NSF SBIR proposals for autonomous robotic manufacturing systems</li>
-        </ul>
-      </article>
-      <article class="cv-entry">
-        <p><span class="cv-date">2024-present</span> <span class="cv-separator">-</span> Principal Software Engineer, Optigon Inc</p>
-        <ul class="cv-sublist">
-          <li>Lead software development for DOE SBIR-funded high-throughput, non-contact spectroscopic metrology and analysis tools for clean-energy materials, including perovskite photovoltaics</li>
-          <li>Develop machine learning analytical models of solar cell behavior</li>
-        </ul>
-      </article>
     </div>
   </section>
 
@@ -125,6 +97,34 @@ body_class: standard-page
       <p>Distinguished Student Award, Dwight Look College of Engineering</p>
       <p>Industrial Affiliates Program Scholarship</p>
       <p>Dell Merit Scholarship</p>
+    </div>
+  </section>
+
+  <section class="cv-section" aria-labelledby="cv-industry-translation">
+    <h2 id="cv-industry-translation">Industry, Entrepreneurship &amp; Research Translation</h2>
+    <div class="cv-list">
+      <article class="cv-entry">
+        <p><span class="cv-date">2019-2023</span> <span class="cv-separator">-</span> Industrial Human-Robot Factory Collaboration, UIUC</p>
+        <ul class="cv-sublist">
+          <li>Collaborated with Foxconn Interconnect Technologies and UIUC research groups led by Timothy Bretl and Katherine Driggs-Campbell on collaborative human-robot factory projects</li>
+          <li>Connected multi-robot task and motion planning research to industrial assembly and human-robot collaboration settings</li>
+        </ul>
+      </article>
+      <article class="cv-entry">
+        <p><span class="cv-date">2023-2025</span> <span class="cv-separator">-</span> Founder, Normandy Automation</p>
+        <ul class="cv-sublist">
+          <li>Developed autonomous robotic manufacturing concepts for just-in-time manufacturing with minimal human reprogramming</li>
+          <li>Leveraged AI and multi-robot systems for autonomous welding and CNC machine-tending workflows</li>
+          <li>Wrote NSF SBIR proposals for autonomous robotic manufacturing systems</li>
+        </ul>
+      </article>
+      <article class="cv-entry">
+        <p><span class="cv-date">2024-present</span> <span class="cv-separator">-</span> Principal Software Engineer, Optigon Inc</p>
+        <ul class="cv-sublist">
+          <li>Lead software development for DOE SBIR-funded high-throughput, non-contact spectroscopic metrology and analysis tools for clean-energy materials, including perovskite photovoltaics</li>
+          <li>Develop machine learning analytical models of solar cell behavior</li>
+        </ul>
+      </article>
     </div>
   </section>
 </main>

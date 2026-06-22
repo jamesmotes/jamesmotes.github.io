@@ -11,6 +11,6 @@
     <a href="/demos/" {% if page.url contains '/demos/' %}aria-current="page"{% endif %}>Demos</a>
     <a href="/about/" {% if page.url contains '/about/' %}aria-current="page"{% endif %}>About / CV</a>
     {% endcomment %}
-    <a href="/cv.html" {% if page.url == '/cv.html' %}aria-current="page"{% endif %}>CV</a>
+    <a href="/cv/" {% if page.url contains '/cv/' %}aria-current="page"{% endif %}>CV</a>
   </div>
 </nav>

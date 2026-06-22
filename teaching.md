@@ -3,6 +3,8 @@ layout: page
 title: Teaching & Mentoring
 permalink: /teaching/
 body_class: standard-page
+published: false
+sitemap: false
 ---
 
 {% include navigation.html %}
