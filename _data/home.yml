@@ -8,21 +8,26 @@ research_program_thrusts:
     publications:
       - title: "Lazy-DaSH: Lazy Approach for Hypergraph-Based Multi-Robot Task and Motion Planning"
         venue: "IEEE Transactions on Robotics, 2026"
+        scholar_url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=O_Zne90AAAAJ&citation_for_view=O_Zne90AAAAJ:0EnyYjriUFMC"
       - title: "Adaptive Robot Coordination: A Subproblem-Based Approach for Hybrid Multi-Robot Motion Planning"
         venue: "IEEE Robotics and Automation Letters, 2024"
+        scholar_url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=O_Zne90AAAAJ&citation_for_view=O_Zne90AAAAJ:ufrVoPGSRksC"
       - title: "Hypergraph-Based Multi-Robot Task and Motion Planning"
         venue: "IEEE Transactions on Robotics, 2023"
+        scholar_url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=O_Zne90AAAAJ&citation_for_view=O_Zne90AAAAJ:Y0pCki6q_DkC"
   - label: "Direction 02"
     title: "Fast Planning Infrastructure"
     tagline: "Make the repeated planning operations cheap enough to matter."
     summary: "Scalable robot-team planning depends on the speed of the low-level operations that planners call repeatedly: collision checking, roadmap validation, conflict detection, and replanning after the world changes. My work develops dynamic roadmap representations, approximation-based validation methods, reusable subproblem structure, and parallel or GPU-friendly planning operations. These tools make adaptive planning practical by reducing the cost of the primitives that usually dominate runtime."
     publications:
+      - title: "SPITE: Simple Polyhedral Intersection Techniques for Modified Environments"
+        venue: "WAFR, 2024"
+        scholar_url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=O_Zne90AAAAJ&citation_for_view=O_Zne90AAAAJ:roLk4NBRz8UC"
       - title: "P-ARC: Exploiting Subproblem Independence for Parallel Multi-Robot Motion Planning"
         venue: "Under review"
       - title: "Multi-Robot Motions in Milliseconds: Vector-Accelerated Primitives for Sampling-Based Planning"
         venue: "Under review"
-      - title: "SPITE: Simple Polyhedral Intersection Techniques for Modified Environments"
-        venue: "WAFR, 2024"
+        scholar_url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=O_Zne90AAAAJ&citation_for_view=O_Zne90AAAAJ:YOwf2qJgpHMC"
   - label: "Direction 03"
     title: "Human-Steerable Planning"
     tagline: "Let people specify, inspect, and revise robot behavior."
@@ -30,15 +35,19 @@ research_program_thrusts:
     publications:
       - title: "ERUPT: An Open Toolkit for Interfacing with Robot Motion Planners in Extended Reality"
         venue: "Under review"
+        scholar_url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=O_Zne90AAAAJ&citation_for_view=O_Zne90AAAAJ:KlAtU1dfN6UC"
       - title: "Object-Centric Reasoning for Behavior with Instruction-Conditioned Trajectories"
         venue: "Under review"
 
 video_demos:
   - title: "Lazy-DaSH: Multi-Robot Rearrangement"
-    caption: "Lazy-DaSH demonstrates efficient multi-robot task and motion planning using a lazy approach to hypergraph-based planning."
+    caption: "Lazy-DaSH uses hypergraph structure and lazy motion validation to solve multi-robot rearrangement problems without validating every possible composite planning space upfront."
     embed_url: "https://www.youtube.com/embed/3eHOzTikcXc"
-    link_label: "Demo details"
-    href: "/demos/"
+    links:
+      - label: "video"
+        href: "https://www.youtube.com/watch?v=3eHOzTikcXc"
+      - label: "paper"
+        href: "https://arxiv.org/abs/2504.05552"
 
 selected_publications:
   - label: "Publication 01"

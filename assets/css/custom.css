@@ -389,6 +389,11 @@ header {
   font-weight: 720;
 }
 
+a.direction-publication-title {
+  text-decoration-thickness: 0.07em;
+  text-underline-offset: 0.17em;
+}
+
 .direction-publication-venue {
   color: var(--accent);
   font-size: 0.82rem;
@@ -436,6 +441,19 @@ header {
   font-size: 0.82rem;
   font-weight: 700;
   text-align: center;
+}
+
+.demo-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 8px;
+  align-items: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.demo-links a {
+  font-weight: 720;
 }
 
 .section-note {

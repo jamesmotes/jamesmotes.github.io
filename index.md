@@ -44,6 +44,12 @@ body_class: home-page
       <p>
         James D. Motes is a postdoctoral researcher in the Siebel School of Computing and Data Science at the University of Illinois Urbana-Champaign, working in the Parasol Lab with Nancy M. Amato. He develops adaptive planning systems for robot teams that coordinate only when tasks, conflicts, or workspace structure require it. His work spans multi-robot task and motion planning, accelerated validation, and human-steerable interfaces. He received his Ph.D. from UIUC and is now a 2026-27 faculty candidate on the academic job market.
       </p>
+      <p>
+        <strong>At a glance:</strong> 14 peer-reviewed archival publications · 11 journal articles · T-RO / RA-L · 20+ graduate students mentored · adaptive robot-team planning, accelerated validation, human-steerable interfaces
+      </p>
+      <p>
+        <strong>Research leadership:</strong> I help lead multiple Parasol research teams across multi-robot planning, accelerated validation, human-steerable planning, and open-source planning infrastructure, mentoring graduate and undergraduate researchers from project formation through publication, and writing grant proposals for government funding agencies and industry collaborators.
+      </p>
     </div>
   </section>
 
@@ -65,7 +71,11 @@ body_class: home-page
         <ul class="direction-publications" aria-label="Selected publications">
           {% for publication in thrust.publications %}
           <li>
+            {% if publication.scholar_url %}
+            <a class="direction-publication-title" href="{{ publication.scholar_url }}" target="_blank" rel="noopener">{{ publication.title }}</a>
+            {% else %}
             <span class="direction-publication-title">{{ publication.title }}</span>
+            {% endif %}
             <span class="direction-publication-venue">{{ publication.venue }}</span>
           </li>
           {% endfor %}
@@ -94,6 +104,17 @@ body_class: home-page
         </div>
         <div>
           <h3>{{ demo.title }}</h3>
+          {% if demo.caption %}
+          <p>{{ demo.caption }}</p>
+          {% endif %}
+          {% if demo.links %}
+          <p class="demo-links">
+            <span>Links:</span>
+            {% for link in demo.links %}
+            <a href="{{ link.href }}" target="_blank" rel="noopener">{{ link.label }}</a>{% unless forloop.last %}<span aria-hidden="true">·</span>{% endunless %}
+            {% endfor %}
+          </p>
+          {% endif %}
         </div>
       </article>
       {% endfor %}
@@ -135,7 +156,7 @@ body_class: home-page
     <div class="section-heading full-width-heading">
       <h2 id="teaching-title">Teaching &amp; Mentoring</h2>
       <p>
-        My teaching is project-based and research-led: students learn algorithms, AI, and robotics by building systems that accumulate across the semester. In the lab, I use a hierarchical mentoring model that gives junior students early research ownership and helps senior students develop as leaders. Using this approach to mentoring as a postdoc and before as a senior PhD student I have mentored over 20 graduate students and dozens of undergraduates.
+        My teaching is project-based and research-led: students learn algorithms, AI, and robotics by building systems that accumulate across the semester. As a postdoc and senior Ph.D. student, I have mentored over 20 graduate students and dozens of undergraduates, using a structured model that gives junior students early ownership and helps senior students develop as research leaders.
       </p>
     </div>
 
