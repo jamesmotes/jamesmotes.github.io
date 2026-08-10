@@ -1,5 +1,5 @@
 source:
-  checked: "June 18, 2026"
+  checked: "August 10, 2026"
   scholar_url: "https://scholar.google.com/citations?user=O_Zne90AAAAJ&hl=en&oi=ao"
   note: "Publication metadata is maintained locally, with the initial archive organized from James Motes's Google Scholar profile."
 
@@ -62,14 +62,14 @@ items:
   - id: "yammanuru2026orbit"
     title: "ORBIT: Object-Centric Reasoning for Behavior with Instruction-Conditioned Trajectories"
     authors: "Ananya Yammanuru, Jared Buabeng, Jiarui Liu, Alan Luo, James D. Motes, Marco Morales, Nancy M. Amato"
-    venue: "In Review"
+    venue: "In Preparation"
     year: "2026"
     group: "Preprints and manuscripts"
     tags: ["human"]
   - id: "motes2026parc"
     title: "P-ARC: Exploiting Subproblem Independence for Parallel Multi-Robot Motion Planning"
     authors: "James D. Motes, Marco Morales, Nancy M. Amato"
-    venue: "In Review"
+    venue: "IEEE Robotics and Automation Letters, conditionally accepted, 2026"
     year: "2026"
     group: "Preprints and manuscripts"
     tags: ["fast"]
@@ -116,18 +116,6 @@ items:
         href: "https://arxiv.org/abs/2411.08851"
       - label: "scholar"
         href: "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=O_Zne90AAAAJ&citation_for_view=O_Zne90AAAAJ:UebtZRa9Y70C"
-  - id: "ashur2024spitepreprint"
-    title: "SPITE: Simple Polyhedral Intersection Techniques for Modified Environments"
-    authors: "S. Ashur, M. Lusardi, M. Markowicz, James Motes, Marco Morales, S. Har-Peled, et al."
-    venue: "Presented at WAFR 2024"
-    year: "2024"
-    group: "2024"
-    tags: ["fast"]
-    links:
-      - label: "paper"
-        href: "https://arxiv.org/abs/2407.00259"
-      - label: "scholar"
-        href: "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=O_Zne90AAAAJ&citation_for_view=O_Zne90AAAAJ:roLk4NBRz8UC"
   - id: "mcbeth2026workspace"
     title: "Scalable Multi-Robot Motion Planning Using Workspace Guidance-Informed Hypergraphs"
     authors: "C. McBeth, James D. Motes, I. Ngui, Marco Morales, Nancy M. Amato"
@@ -138,16 +126,16 @@ items:
     links:
       - label: "scholar"
         href: "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=O_Zne90AAAAJ&citation_for_view=O_Zne90AAAAJ:8k81kl-MbHgC"
-  - id: "ashur2026spite"
-    title: "SPITE: Simple Polyhedral Intersection Techniques for Motion Planning"
-    authors: "S. Ashur, M. Lusardi, M. Markowicz, James Motes, Marco Morales, S. Har-Peled, et al."
-    venue: "Algorithmic Foundations of Robotics XVI, Volume 1, 2026"
-    year: "2026"
-    group: "2026"
+  - id: "ashur2024spite"
+    title: "SPITE: Simple Polyhedral Intersection Techniques for Motion Planning in Modified Environments"
+    authors: "S. Ashur, M. Lusardi, M. Markowicz, James Motes, Marco Morales, S. Har-Peled, Nancy M. Amato"
+    venue: "International Workshop on the Algorithmic Foundations of Robotics, 151-168, 2024"
+    year: "2024"
+    group: "2024"
     tags: ["fast"]
     links:
       - label: "scholar"
-        href: "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=O_Zne90AAAAJ&citation_for_view=O_Zne90AAAAJ:M3ejUd6NZC8C"
+        href: "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=O_Zne90AAAAJ&citation_for_view=O_Zne90AAAAJ:_kc_bZDykSQC"
   - id: "qin2025karc"
     title: "K-ARC: Adaptive Robot Coordination for Multi-Robot Kinodynamic Planning"
     authors: "M. Qin, I. Solis, James D. Motes, Marco Morales, Nancy M. Amato"
@@ -188,16 +176,6 @@ items:
     links:
       - label: "scholar"
         href: "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=O_Zne90AAAAJ&citation_for_view=O_Zne90AAAAJ:ufrVoPGSRksC"
-  - id: "ashur2024spitewafr"
-    title: "SPITE: Simple Polyhedral Intersection Techniques for Motion Planning in Modified Environments"
-    authors: "S. Ashur, M. Lusardi, M. Markowicz, James Motes, Marco Morales, S. Har-Peled, et al."
-    venue: "International Workshop on the Algorithmic Foundations of Robotics, 151-168, 2024"
-    year: "2024"
-    group: "2024"
-    tags: ["fast"]
-    links:
-      - label: "scholar"
-        href: "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=O_Zne90AAAAJ&citation_for_view=O_Zne90AAAAJ:_kc_bZDykSQC"
   - id: "motes2023hypergraph"
     title: "Hypergraph-Based Multi-Robot Task and Motion Planning"
     authors: "James Motes, T. Chen, T. Bretl, M. M. Aguirre, Nancy M. Amato"

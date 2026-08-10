@@ -1,8 +1,8 @@
-research_directions_intro: "My work asks three connected questions: when should robot teams coordinate, how can that coordination run fast enough to use, and how can people guide the resulting plans?"
+research_directions_intro: "My work asks three connected questions: how should planning systems organize coordination across large robot teams, how can the resulting computation remain practical as problems grow, and how can people guide the plans without managing every robot individually?"
 
 research_program_thrusts:
   - label: "Direction 01"
-    title: "Adaptive Robot-Team Planning"
+    title: "Scalable Robot-Team Planning"
     tagline: "Coordinate only where the problem demands it."
     summary: "Large robot teams should not default to one full joint planning space, where the search can grow exponentially with every robot, object, and task dependency. I design planners that start from decomposed robot, object, task, and workspace models, then add coordination around the interactions that create real bottlenecks. This line of work studies how task structure, workspace structure, and discovered motion conflicts can guide when robots plan independently, locally together, or as a fully coupled team."
     publications:
@@ -16,28 +16,28 @@ research_program_thrusts:
         venue: "IEEE Transactions on Robotics, 2023"
         scholar_url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=O_Zne90AAAAJ&citation_for_view=O_Zne90AAAAJ:Y0pCki6q_DkC"
   - label: "Direction 02"
-    title: "Fast Planning Infrastructure"
+    title: "Accelerated Planning Infrastructure"
     tagline: "Make the repeated planning operations cheap enough to matter."
-    summary: "Scalable robot-team planning depends on the speed of the low-level operations that planners call repeatedly: collision checking, roadmap validation, conflict detection, and replanning after the world changes. My work develops dynamic roadmap representations, approximation-based validation methods, reusable subproblem structure, and parallel or GPU-friendly planning operations. These tools make adaptive planning practical by reducing the cost of the primitives that usually dominate runtime."
+    summary: "Scalable robot-team planning depends on the speed of the low-level operations that planners call repeatedly: collision checking, roadmap validation, conflict detection, and replanning after the world changes. My work develops dynamic roadmap representations, approximation-based validation methods, reusable subproblem structure, and parallel, SIMD, or GPU-friendly planning operations. These tools make robot-team planning practical by reducing the cost of the primitives that usually dominate runtime."
     publications:
-      - title: "SPITE: Simple Polyhedral Intersection Techniques for Modified Environments"
-        venue: "WAFR, 2024"
-        scholar_url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=O_Zne90AAAAJ&citation_for_view=O_Zne90AAAAJ:roLk4NBRz8UC"
       - title: "P-ARC: Exploiting Subproblem Independence for Parallel Multi-Robot Motion Planning"
-        venue: "Under review"
+        venue: "IEEE Robotics and Automation Letters, conditionally accepted, 2026"
+      - title: "SPITE: Simple Polyhedral Intersection Techniques for Motion Planning in Modified Environments"
+        venue: "International Workshop on the Algorithmic Foundations of Robotics, 151-168, 2024"
+        scholar_url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=O_Zne90AAAAJ&citation_for_view=O_Zne90AAAAJ:_kc_bZDykSQC"
       - title: "Multi-Robot Motions in Milliseconds: Vector-Accelerated Primitives for Sampling-Based Planning"
         venue: "Under review"
         scholar_url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=O_Zne90AAAAJ&citation_for_view=O_Zne90AAAAJ:YOwf2qJgpHMC"
   - label: "Direction 03"
     title: "Human-Steerable Planning"
     tagline: "Let people specify, inspect, and revise robot behavior."
-    summary: "Robot teams should be usable by people who are not motion planning experts. This emerging direction extends my planning work toward interfaces and representations that let users express preferences in language, inspect planned motions in extended reality, and revise tasks or constraints without editing planner internals. In collaborative planning, people provide intent and context while planners preserve feasibility, safety, and coordination."
+    summary: "Robot teams should be usable by engineers and operators who are not motion-planning experts. This emerging direction develops human-facing interfaces that let people specify goals and preferences, inspect planned behavior and tradeoffs, and revise tasks, constraints, or workspace designs without editing planner internals. Current examples include natural-language interaction and AR/VR systems, while the broader goal is to identify the interaction methods and shared representations that let people guide complex robot teams at a useful level of abstraction. People provide intent and context while the planner preserves feasibility, safety, coordination, and solution quality."
     publications:
       - title: "ERUPT: An Open Toolkit for Interfacing with Robot Motion Planners in Extended Reality"
         venue: "Under review"
         scholar_url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=O_Zne90AAAAJ&citation_for_view=O_Zne90AAAAJ:KlAtU1dfN6UC"
       - title: "Object-Centric Reasoning for Behavior with Instruction-Conditioned Trajectories"
-        venue: "Under review"
+        venue: "In preparation"
 
 video_demos:
   - title: "Lazy-DaSH: Multi-Robot Rearrangement"

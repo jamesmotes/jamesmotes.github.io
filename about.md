@@ -57,8 +57,8 @@ sitemap: false
       </article>
       <article class="about-stat">
         <p class="item-label">Research output</p>
-        <h3>14 peer-reviewed archival publications</h3>
-        <p>11 journal articles and 3 refereed conference proceedings, plus first-author and student-led manuscripts under review.</p>
+        <h3>15 peer-reviewed archival publications</h3>
+        <p>12 journal articles and 3 refereed conference proceedings, plus first-author and student-led manuscripts under review.</p>
       </article>
       <article class="about-stat">
         <p class="item-label">Mentoring</p>
