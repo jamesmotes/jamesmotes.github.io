@@ -42,7 +42,7 @@ body_class: home-page
     <div class="section-heading full-width-heading">
       <h2 id="short-bio-title">Short Bio</h2>
       <p>
-        James D. Motes is a postdoctoral researcher in the Siebel School of Computing and Data Science at the University of Illinois Urbana-Champaign, working in the Parasol Lab with Nancy M. Amato. He develops planning systems that make large robot teams usable by non-experts by automating coordination, accelerating computation, and creating interfaces for meaningful human guidance. His work spans multi-robot task and motion planning, parallel and hardware-accelerated planning infrastructure, and emerging natural-language and AR/VR interfaces. He received his Ph.D. from UIUC and is now a 2026-27 faculty candidate on the academic job market.
+        James D. Motes is a postdoctoral researcher in the Siebel School of Computing and Data Science at the University of Illinois Urbana-Champaign, working in the Parasol Lab with Nancy M. Amato. He develops planning systems that make large robot teams usable by non-experts by automating coordination, accelerating computation, and creating interfaces for meaningful human guidance. His work spans multi-robot task and motion planning, parallel and hardware-accelerated planning infrastructure, and natural-language and AR/VR interfaces. He received his Ph.D. from UIUC and is now a 2026-27 faculty candidate on the academic job market.
       </p>
       <p>
         <strong>At a glance:</strong> 15 peer-reviewed archival publications · 12 journal articles · T-RO / RA-L · 20+ graduate students mentored · scalable robot-team planning, accelerated planning infrastructure, human-steerable interfaces
