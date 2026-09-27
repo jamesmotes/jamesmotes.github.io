@@ -7,7 +7,7 @@ body_class: standard-page
 
 {% include navigation.html %}
 
-<main class="page-shell cv-page">
+<main class="page-shell cv-page" id="main-content" tabindex="-1">
   <header class="cv-hero">
     <h1>Curriculum Vitae</h1>
     <p><a class="cv-download" href="/assets/CV/james_motes_cv.pdf">Download CV (PDF)</a></p>
@@ -119,10 +119,10 @@ body_class: standard-page
         </ul>
       </article>
       <article class="cv-entry">
-        <p><span class="cv-date">2024-present</span> <span class="cv-separator">-</span> Principal Software Engineer, Optigon Inc</p>
+        <p><span class="cv-date">2024-2026 (May)</span> <span class="cv-separator">-</span> Principal Software Engineer, Optigon Inc</p>
         <ul class="cv-sublist">
-          <li>Lead software development for DOE SBIR-funded high-throughput, non-contact spectroscopic metrology and analysis tools for clean-energy materials, including perovskite photovoltaics</li>
-          <li>Develop machine learning analytical models of solar cell behavior</li>
+          <li>Led software development for DOE SBIR-funded high-throughput, non-contact spectroscopic metrology and analysis tools for clean-energy materials, including perovskite photovoltaics</li>
+          <li>Developed machine learning analytical models of solar cell behavior</li>
         </ul>
       </article>
     </div>

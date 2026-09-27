@@ -1,102 +1,123 @@
-research_directions_intro: "My work asks three connected questions: how should planning systems organize coordination across large robot teams, how can the resulting computation remain practical as problems grow, and how can people guide the plans without managing every robot individually?"
+headline: "Selective coordination for scalable robot teams"
+summary: >-
+  I develop planning systems that decide which robots, tasks, and motions must be
+  planned together. My future work will extend these systems to learn from
+  experience and respond to human guidance.
 
-research_program_thrusts:
-  - label: "Direction 01"
-    title: "Scalable Robot-Team Planning"
-    tagline: "Coordinate only where the problem demands it."
-    summary: "Large robot teams should not default to one full joint planning space, where the search can grow exponentially with every robot, object, and task dependency. I design planners that start from decomposed robot, object, task, and workspace models, then add coordination around the interactions that create real bottlenecks. This line of work studies how task structure, workspace structure, and discovered motion conflicts can guide when robots plan independently, locally together, or as a fully coupled team."
+at_a_glance:
+  - label: Research record
+    text: 16 peer-reviewed publications
+    href: /publications/
+  - label: Mentoring
+    text: 20+ graduate researchers mentored
+    href: /#leadership
+  - label: Research leadership
+    text: 3 open-source planning libraries led
+    href: /#leadership
+
+research_intro: >-
+  Robot teams could make manufacturing and logistics more flexible, but
+  coordinating more robots creates a rapidly growing planning problem. Planning
+  robots independently can miss necessary interactions; planning the entire team
+  jointly becomes expensive. My research determines what must be planned together
+  and makes the resulting computation efficient.
+
+foundations:
+  - id: selective-coordination
+    title: Selective Coordination in Multi-Robot Planning
+    subtitle: Decide what must be planned together.
+    body: >-
+      Robot teams need to coordinate, but not every decision needs to involve the whole
+      team. I develop representations and algorithms that use task requirements and
+      conflicts between planned motions to determine which robots, objects, and motion
+      segments should be considered together. They expand joint planning where needed
+      and preserve independent work elsewhere, rather than fixing the scope of
+      coordination in advance.
+    extension_label: Selected result
+    extension: >-
+      Lazy-DaSH planned rearrangements with eight robot arms and more than 40 objects.
     publications:
-      - title: "Lazy-DaSH: Lazy Approach for Hypergraph-Based Multi-Robot Task and Motion Planning"
-        venue: "IEEE Transactions on Robotics, 2026"
-        scholar_url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=O_Zne90AAAAJ&citation_for_view=O_Zne90AAAAJ:0EnyYjriUFMC"
-      - title: "Adaptive Robot Coordination: A Subproblem-Based Approach for Hybrid Multi-Robot Motion Planning"
-        venue: "IEEE Robotics and Automation Letters, 2024"
-        scholar_url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=O_Zne90AAAAJ&citation_for_view=O_Zne90AAAAJ:ufrVoPGSRksC"
-      - title: "Hypergraph-Based Multi-Robot Task and Motion Planning"
-        venue: "IEEE Transactions on Robotics, 2023"
-        scholar_url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=O_Zne90AAAAJ&citation_for_view=O_Zne90AAAAJ:Y0pCki6q_DkC"
-  - label: "Direction 02"
-    title: "Accelerated Planning Infrastructure"
-    tagline: "Make the repeated planning operations cheap enough to matter."
-    summary: "Scalable robot-team planning depends on the speed of the low-level operations that planners call repeatedly: collision checking, roadmap validation, conflict detection, and replanning after the world changes. My work develops dynamic roadmap representations, approximation-based validation methods, reusable subproblem structure, and parallel, SIMD, or GPU-friendly planning operations. These tools make robot-team planning practical by reducing the cost of the primitives that usually dominate runtime."
+      - id: motes2023hypergraph
+        label: DaSH
+      - id: solis2024arc
+        label: ARC
+      - id: lee2025lazydash
+        label: Lazy-DaSH
+  - id: accelerated-infrastructure
+    title: Accelerated Planning Infrastructure
+    subtitle: Organize the necessary work—and avoid the rest.
+    body: >-
+      Smaller planning problems still require substantial search and collision
+      checking. I use the independence preserved by selective coordination to run
+      searches and repairs in parallel, and tailor collision checking to the
+      information each planning decision needs. These methods avoid unnecessary
+      geometric work and organize the remaining computation for efficient execution
+      on CPUs and GPUs, supporting larger robot teams and replanning in changing
+      environments.
+    extension_label: Selected result
+    extension: >-
+      On a benchmark with sixteen seven-joint robot arms, P-ARC achieved a median
+      planning time of 1.1 seconds—a 4× speedup over sequential ARC.
     publications:
-      - title: "P-ARC: Exploiting Subproblem Independence for Parallel Multi-Robot Motion Planning"
-        venue: "IEEE Robotics and Automation Letters, conditionally accepted, 2026"
-      - title: "SPITE: Simple Polyhedral Intersection Techniques for Motion Planning in Modified Environments"
-        venue: "International Workshop on the Algorithmic Foundations of Robotics, 151-168, 2024"
-        scholar_url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=O_Zne90AAAAJ&citation_for_view=O_Zne90AAAAJ:_kc_bZDykSQC"
-      - title: "Multi-Robot Motions in Milliseconds: Vector-Accelerated Primitives for Sampling-Based Planning"
-        venue: "Under review"
-        scholar_url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=O_Zne90AAAAJ&citation_for_view=O_Zne90AAAAJ:YOwf2qJgpHMC"
-  - label: "Direction 03"
-    title: "Human-Steerable Planning"
-    tagline: "Let people specify, inspect, and revise robot behavior."
-    summary: "Robot teams should be usable by engineers and operators who are not motion-planning experts. This emerging direction develops human-facing interfaces that let people specify goals and preferences, inspect planned behavior and tradeoffs, and revise tasks, constraints, or workspace designs without editing planner internals. Current examples include natural-language interaction and AR/VR systems, while the broader goal is to identify the interaction methods and shared representations that let people guide complex robot teams at a useful level of abstraction. People provide intent and context while the planner preserves feasibility, safety, coordination, and solution quality."
+      - id: motes2026parc
+        label: P-ARC
+      - id: motes2026milliseconds
+        label: Vector-Accelerated Planning
+      - id: ashur2024spite
+        label: SPITE
+
+future_intro: >-
+  My future research asks how robot teams can improve through experience and
+  collaborate with people, using these foundations to verify and revise plans.
+future_directions:
+  - id: learning-guided-coordination
+    title: Learning-Guided Coordination
+    subtitle: Use experience to guide coordination—and coordination to organize experience.
+    body: >-
+      I will study how experience from planning and execution can improve decisions about which 
+      robots should coordinate, when, and how. Learned policies or explicit reuse of past 
+      solutions can guide these decisions. In turn, selective coordination can organize 
+      experience around local interactions, providing structure for learning across tasks, 
+      teams, and environments. The planner will check feasibility and revise coordination 
+      or replan when guidance is insufficient.
+    extension_label: Starting point
+    extension: >-
+      Preliminary work explores reusable task-level coordination strategies and reuse
+      of solutions to local motion-planning problems.
     publications:
-      - title: "ERUPT: An Open Toolkit for Interfacing with Robot Motion Planners in Extended Reality"
-        venue: "Under review"
-        scholar_url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=O_Zne90AAAAJ&citation_for_view=O_Zne90AAAAJ:KlAtU1dfN6UC"
-      - title: "Object-Centric Reasoning for Behavior with Instruction-Conditioned Trajectories"
-        venue: "In preparation"
+      - id: solis2024experience
+        label: Experience-Based Subproblem Planning
+  - id: interactive-planning
+    title: Interactive Planning
+    subtitle: Let people inspect and revise multi-robot plans without programming individual robots.
+    body: >-
+      I will study what information people and planners should exchange, and when to
+      use visualization, direct manipulation, or language. People might mark regions
+      to keep clear; planners could explain conflicts or alternatives. The challenge
+      is to translate this exchange into planning decisions, validate revisions, and
+      preserve unaffected tasks and motions.
+    extension_label: Starting point
+    extension: >-
+      ERUPT, developed with collaborators and students I mentored, lets users configure
+      workspaces and visualize planned robot motions in AR/VR.
+    publications:
+      - id: ngui2025erupt
+        label: ERUPT
+
+leadership_publications:
+  - id: lee2025lazydash
+    label: Lazy-DaSH
+  - id: mcbeth2026workspace
+    label: Workspace-Guided Planning
+  - id: qin2025karc
+    label: K-ARC
 
 video_demos:
-  - title: "Lazy-DaSH: Multi-Robot Rearrangement"
-    caption: "Lazy-DaSH uses hypergraph structure and lazy motion validation to solve multi-robot rearrangement problems without validating every possible composite planning space upfront."
+  - id: lazy-dash-demo
+    title: "Lazy-DaSH: Multi-Robot Rearrangement"
+    caption: >-
+      Planning rearrangements without testing every possible robot–object combination
+      in advance.
     embed_url: "https://www.youtube.com/embed/3eHOzTikcXc"
-    links:
-      - label: "video"
-        href: "https://www.youtube.com/watch?v=3eHOzTikcXc"
-      - label: "paper"
-        href: "https://arxiv.org/abs/2504.05552"
-
-selected_publications:
-  - label: "Publication 01"
-    title: "[Selected publication 1 placeholder]"
-    full_title: "[Full paper title placeholder]"
-    venue: "[Venue and year placeholder]"
-    summary: "Placeholder for a one-sentence contribution summary that anchors one of the research themes above."
-    links:
-      - label: "Paper"
-        href: "/publications/"
-      - label: "Video"
-        href: "/demos/"
-  - label: "Publication 02"
-    title: "[Selected publication 2 placeholder]"
-    full_title: "[Full paper title placeholder]"
-    venue: "[Venue and year placeholder]"
-    summary: "Placeholder for a second concise contribution summary connected to the future lab agenda."
-    links:
-      - label: "Paper"
-        href: "/publications/"
-  - label: "Publication 03"
-    title: "[Selected publication 3 placeholder]"
-    full_title: "[Full paper title placeholder]"
-    venue: "[Venue and year placeholder]"
-    summary: "Placeholder for a third representative contribution, selected for coherence rather than completeness."
-    links:
-      - label: "Paper"
-        href: "/publications/"
-
-teaching_cards:
-  - title: "How I teach"
-    description: "Project-based, research-led courses that connect theory to working systems."
-    details:
-      - "Active learning"
-      - "Backward course design"
-      - "Cumulative projects"
-      - "Reproducible experimental practice"
-  - title: "What I can teach"
-    description: "Courses across robotics, AI, algorithms, motion planning, and autonomous systems."
-    details:
-      - "Introductory AI"
-      - "Robotics"
-      - "Algorithms"
-      - "Task and motion planning"
-      - "Human-robot interaction"
-  - title: "How I mentor"
-    description: "Structured mentoring that gives students ownership while developing communication, leadership, and research independence."
-    details:
-      - "Hierarchical lab mentoring"
-      - "Regular research check-ins"
-      - "Writing and presentation practice"
-      - "Student leadership opportunities"
+    video_url: "https://www.youtube.com/watch?v=3eHOzTikcXc"
+    publication_id: lee2025lazydash

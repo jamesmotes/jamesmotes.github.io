@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 {% assign tab_title = site.title %}
-{% if page.title and page.title != site.title %}
+{% if page.browser_title %}
+{% assign tab_title = page.browser_title %}
+{% elsif page.title and page.title != site.title %}
   {% assign tab_title = site.title | append: " - " | append: page.title %}
 {% endif %}
     <title>{{ tab_title | escape }}</title>

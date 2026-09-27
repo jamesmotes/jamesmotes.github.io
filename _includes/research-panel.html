@@ -1,0 +1,11 @@
+<article class="research-panel{% if include.future %} research-panel--future{% endif %}" id="{{ include.topic.id }}" aria-labelledby="{{ include.topic.id }}-title">
+  <h4 id="{{ include.topic.id }}-title">{{ include.topic.title | escape }}</h4>
+  <p class="research-subtitle">{{ include.topic.subtitle | escape }}</p>
+  <p>{{ include.topic.body | escape }}</p>
+  {% assign research_extension = include.topic.extension | default: '' | strip %}
+  {% assign research_extension_label = include.topic.extension_label | default: '' | strip %}
+  {% if research_extension != empty %}
+  <p class="research-extension">{% if research_extension_label != empty %}<strong>{{ research_extension_label | escape }}:</strong> {% endif %}{{ research_extension | escape }}</p>
+  {% endif %}
+  {% include publication-links.html publications=include.topic.publications %}
+</article>

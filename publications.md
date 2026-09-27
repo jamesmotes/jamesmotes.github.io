@@ -7,7 +7,7 @@ body_class: standard-page
 
 {% include navigation.html %}
 
-<main class="page-shell">
+<main class="page-shell" id="main-content" tabindex="-1">
   <header class="page-hero publications-hero">
     <h1>Publications</h1>
     <p class="source-note">
@@ -17,13 +17,14 @@ body_class: standard-page
   </header>
 
   <section class="page-section publications-section" aria-label="Publication archive">
-    <div class="pub-filter" role="group" aria-label="Filter publications by research direction">
-      <button type="button" class="pub-filter-chip is-active" data-filter="all">All</button>
+    <div class="pub-filter" role="group" aria-label="Filter publications by research direction" hidden>
+      <button type="button" class="pub-filter-chip is-active" data-filter="all" aria-pressed="true">All</button>
       {% for topic in site.data.publications.topics %}
-      <button type="button" class="pub-filter-chip" data-filter="{{ topic.slug }}">{{ topic.title }}</button>
+      <button type="button" class="pub-filter-chip" data-filter="{{ topic.slug }}" aria-pressed="false">{{ topic.title }}</button>
       {% endfor %}
     </div>
 
+    <p class="sr-only" id="publication-filter-status" role="status"></p>
     <div class="pub-list">
       {% for group in site.data.publications.groups %}
       {% assign group_publications = site.data.publications.items | where: "group", group %}
@@ -64,53 +65,3 @@ body_class: standard-page
     </div>
   </section>
 </main>
-
-<script>
-  (function () {
-    var filterBar = document.querySelector(".pub-filter");
-    var list = document.querySelector(".pub-list");
-    if (!filterBar || !list) return;
-
-    var chips = filterBar.querySelectorAll(".pub-filter-chip");
-    var entries = list.querySelectorAll(".pub-entry");
-    var yearHeaders = list.querySelectorAll(".pub-year");
-
-    function headerHasVisibleEntry(header) {
-      var next = header.nextElementSibling;
-      while (next && !next.classList.contains("pub-year")) {
-        if (next.classList.contains("pub-entry") && !next.classList.contains("pub-hidden")) {
-          return true;
-        }
-        next = next.nextElementSibling;
-      }
-      return false;
-    }
-
-    function applyFilter(filter) {
-      entries.forEach(function (entry) {
-        var tags = (entry.getAttribute("data-tags") || "").split(/\s+/).filter(Boolean);
-        entry.classList.toggle("pub-hidden", filter !== "all" && tags.indexOf(filter) === -1);
-      });
-
-      yearHeaders.forEach(function (header) {
-        header.classList.toggle("pub-hidden", !headerHasVisibleEntry(header));
-      });
-
-      chips.forEach(function (chip) {
-        chip.classList.toggle("is-active", chip.getAttribute("data-filter") === filter);
-      });
-    }
-
-    chips.forEach(function (chip) {
-      chip.addEventListener("click", function () {
-        applyFilter(chip.getAttribute("data-filter"));
-      });
-    });
-
-    list.querySelectorAll(".pub-tag").forEach(function (tag) {
-      tag.addEventListener("click", function () {
-        applyFilter(tag.getAttribute("data-tag"));
-      });
-    });
-  })();
-</script>

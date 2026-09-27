@@ -1,0 +1,8 @@
+<ul class="project-links" aria-label="{{ include.label | default: 'Supporting publications' }}">
+  {% for reference in include.publications %}
+  {% assign publication = site.data.publications.items | where: 'id', reference.id | first %}
+  {% if publication %}
+  <li><a href="{{ '/publications/' | relative_url }}#{{ publication.id }}" aria-label="{{ reference.label | escape }}: {{ publication.title | escape }}">{{ reference.label | escape }}</a></li>
+  {% endif %}
+  {% endfor %}
+</ul>

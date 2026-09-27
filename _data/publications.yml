@@ -5,11 +5,13 @@ source:
 
 topics:
   - slug: "adaptive"
-    title: "Adaptive Robot-Team Planning"
+    title: "Selective Coordination"
   - slug: "fast"
-    title: "Fast Planning Infrastructure"
+    title: "Accelerated Planning Infrastructure"
   - slug: "human"
-    title: "Human-Steerable Planning"
+    title: "Interactive Planning"
+  - slug: "learning"
+    title: "Learning-Guided Coordination"
 
 groups:
   - "Preprints and manuscripts"
@@ -110,7 +112,7 @@ items:
     venue: "In Review"
     year: "2024"
     group: "Preprints and manuscripts"
-    tags: ["adaptive"]
+    tags: ["adaptive", "learning"]
     links:
       - label: "paper"
         href: "https://arxiv.org/abs/2411.08851"

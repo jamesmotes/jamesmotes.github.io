@@ -1,0 +1,26 @@
+search_cycle: "2026–27"
+email: "jmotes2@illinois.edu"
+lab_url: "https://www.parasollab.web.illinois.edu/people/jmotes2/"
+materials:
+  - id: cv
+    label: CV
+    url: /assets/CV/james_motes_cv.pdf
+    available: true
+    contexts: [hero, contact]
+  - id: research_statement
+    label: Research Statement
+    available: false
+    contexts: [hero, contact]
+  - id: teaching_statement
+    label: Teaching Statement
+    available: false
+    contexts: [hero, contact]
+  - id: scholar
+    label: Google Scholar
+    url: "https://scholar.google.com/citations?user=O_Zne90AAAAJ&hl=en&oi=ao"
+    available: true
+    contexts: [hero]
+  - id: email
+    label: Email
+    available: true
+    contexts: [hero, contact]

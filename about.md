@@ -223,7 +223,7 @@ sitemap: false
         </div>
       </article>
       <article class="about-timeline-item">
-        <p class="about-date">2024-Present</p>
+        <p class="about-date">2024-2026 (May)</p>
         <div>
           <h3>Optigon Inc.</h3>
           <p>As principal software engineer, I lead software development for DOE SBIR-funded high-throughput spectroscopic metrology and analysis tools for clean-energy materials.</p>

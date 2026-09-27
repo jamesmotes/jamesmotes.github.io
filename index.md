@@ -1,185 +1,145 @@
 ---
 layout: default
-title: Home
+title: Robotics and Multi-Robot Planning
+browser_title: James D. Motes | Robotics and Multi-Robot Planning
 permalink: /
 body_class: home-page
 ---
 
 {% include navigation.html %}
 
-<main class="home-main">
+<main class="home-main" id="main-content" tabindex="-1">
   <section class="profile-intro" aria-labelledby="profile-title">
     <div class="profile-nameplate">
       <figure class="profile-photo">
-        <img src="/assets/images/james.jpg" alt="Portrait of James D. Motes">
+        <img src="{{ '/assets/images/james_smile.jpg' | relative_url }}" alt="Portrait of James D. Motes" width="164" height="164" fetchpriority="high">
       </figure>
-
       <div class="profile-copy">
-        <p class="eyebrow">Faculty candidate, 2026–27 cycle</p>
+        <p class="eyebrow">Faculty candidate · {{ site.data.profile.search_cycle }} academic job market</p>
         <h1 id="profile-title">James D. Motes</h1>
-        <p class="status-line">
-          Postdoctoral Researcher, University of Illinois Urbana-Champaign · Parasol Lab
-        </p>
-        <nav class="profile-links" aria-label="Faculty search links">
-          <button type="button" class="copy-email-button" data-copy-text="jmotes2@illinois.edu" aria-label="Copy email address jmotes2@illinois.edu">jmotes2@illinois.edu</button>
-          <a href="/assets/CV/james_motes_cv.pdf">CV</a>
-          <a href="https://scholar.google.com/citations?user=O_Zne90AAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a>
-          <a href="https://www.parasollab.web.illinois.edu/people/jmotes2/">Parasol Lab</a>
-        </nav>
-        <span class="copy-status" aria-live="polite"></span>
+        <p class="status-line">Postdoctoral Researcher, University of Illinois Urbana-Champaign · Parasol Lab</p>
+        {% include material-links.html context='hero' %}
       </div>
     </div>
-
     <div class="profile-statement">
-      <h2>Planning systems that make large robot teams usable by non-experts</h2>
-      <p class="intro-pitch">
-        I build planning systems that keep robot teams scalable by coordinating only where the problem demands it. My future lab will make those systems faster, more interactive, and easier for people to guide through language, visualization, and shared task representations.
-      </p>
+      <p class="research-headline">{{ site.data.home.headline }}</p>
+      <p class="intro-pitch">{{ site.data.home.summary }}</p>
     </div>
   </section>
 
-  <section class="home-section" id="short-bio" aria-labelledby="short-bio-title">
+  <section class="home-section short-bio" id="short-bio" aria-labelledby="short-bio-title">
     <div class="section-heading full-width-heading">
       <h2 id="short-bio-title">Short Bio</h2>
-      <p>
-        James D. Motes is a postdoctoral researcher in the Siebel School of Computing and Data Science at the University of Illinois Urbana-Champaign, working in the Parasol Lab with Nancy M. Amato. He develops planning systems that make large robot teams usable by non-experts by automating coordination, accelerating computation, and creating interfaces for meaningful human guidance. His work spans multi-robot task and motion planning, parallel and hardware-accelerated planning infrastructure, and natural-language and AR/VR interfaces. He received his Ph.D. from UIUC and is now a 2026-27 faculty candidate on the academic job market.
+      <p>I am a postdoctoral researcher in the <a href="{{ site.data.profile.lab_url }}">Parasol Lab</a> at the University of Illinois Urbana-Champaign, working with Nancy M. Amato. I earned my Ph.D. in Computer Science at UIUC, studying multi-robot task and motion planning.</p>
+      <p class="at-a-glance">
+        <strong>At a glance:</strong>
+        {% for item in site.data.home.at_a_glance %}<a href="{{ item.href | relative_url }}">{{ item.text }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}
       </p>
-      <p>
-        <strong>At a glance:</strong> 15 peer-reviewed archival publications · 12 journal articles · T-RO / RA-L · 20+ graduate students mentored · scalable robot-team planning, accelerated planning infrastructure, human-steerable interfaces
-      </p>
-      <p>
-        <strong>Research leadership:</strong> I lead multiple Parasol research teams across scalable robot-team planning, accelerated planning infrastructure, human-steerable planning, and open-source software. I set project directions, mentor graduate and undergraduate researchers from project formation through publication, and writing grant proposals for government funding agencies and industry collaborators.
-      </p>
+      <p><strong>Research leadership:</strong> I lead graduate research teams and open-source software development in multi-robot planning, and have served as a primary author on NSF and industry research proposals.</p>
     </div>
   </section>
 
-  <section class="home-section" id="selected-research-directions" aria-labelledby="research-directions-title">
-    <div class="section-heading">
-      <h2 id="research-directions-title">Selected Research Directions</h2>
-      <p>
-        {{ site.data.home.research_directions_intro }}
-      </p>
+  <section class="home-section" id="research" aria-labelledby="research-directions-title">
+    <span class="compatibility-anchor" id="selected-research-directions" aria-hidden="true"></span>
+    <div class="section-heading prose">
+      <h2 id="research-directions-title">Research</h2>
+      <p>{{ site.data.home.research_intro }}</p>
     </div>
+    <div class="research-group" aria-labelledby="foundations-title">
+      <h3 class="research-group-title" id="foundations-title">Established foundations</h3>
+      <div class="research-grid">
+        {% for topic in site.data.home.foundations %}
+        {% include research-panel.html topic=topic %}
+        {% endfor %}
+      </div>
+    </div>
+    <div class="research-group research-group--future" aria-labelledby="future-title">
+      <h3 class="research-group-title" id="future-title">Future directions</h3>
+      <p class="prose">{{ site.data.home.future_intro }}</p>
+      <div class="research-grid">
+        {% for topic in site.data.home.future_directions %}
+        {% include research-panel.html topic=topic future=true %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
 
-    <div class="research-direction-list">
-      {% for thrust in site.data.home.research_program_thrusts %}
-      <article class="research-direction-card">
-        <p class="item-label">{{ thrust.label }}</p>
-        <h3>{{ thrust.title }}</h3>
-        <p class="direction-tagline">{{ thrust.tagline }}</p>
-        <p>{{ thrust.summary }}</p>
-        <ul class="direction-publications" aria-label="Selected publications">
-          {% for publication in thrust.publications %}
-          <li>
-            {% if publication.scholar_url %}
-            <a class="direction-publication-title" href="{{ publication.scholar_url }}" target="_blank" rel="noopener">{{ publication.title }}</a>
-            {% else %}
-            <span class="direction-publication-title">{{ publication.title }}</span>
-            {% endif %}
-            <span class="direction-publication-venue">{{ publication.venue }}</span>
-          </li>
-          {% endfor %}
-        </ul>
-      </article>
-      {% endfor %}
+  <section class="home-section" id="leadership" aria-labelledby="leadership-title">
+    <div class="section-heading prose">
+      <h2 id="leadership-title">Research Leadership &amp; Mentoring</h2>
+      <p>I lead student teams from project definition through implementation and publication, connecting their work through shared planning software. My direct mentorship has supported 11 student-led archival publications.</p>
     </div>
-    <p class="section-note">
-      <a href="/publications/">View the full publications page</a>
-    </p>
+    <div class="leadership-details">
+      <div>
+        <h3>Mentoring approach</h3>
+        <p>I emphasize early ownership and increasing independence for graduate and undergraduate researchers. I have mentored over 20 graduate students, including five through completed Ph.D. or master’s degrees as their primary day-to-day research mentor.</p>
+      </div>
+      <div>
+        <h3>Building a research program</h3>
+        <p>I lead open-source planning software: I authored CoMotion’s code, designed Open-SPITE’s architecture and direct its student developers, and coordinate Parasol Planning Library development.</p>
+        <p class="student-work-label">Student-led examples</p>
+        {% include publication-links.html publications=site.data.home.leadership_publications label='Student-led publications' %}
+      </div>
+    </div>
   </section>
 
   <section class="home-section" id="video-demos" aria-labelledby="video-demos-title">
-    <div class="section-heading">
-      <h2 id="video-demos-title">Video Demos</h2>
-    </div>
-    <div class="demo-list" aria-label="Video demos">
-      {% for demo in site.data.home.video_demos %}
-      <article class="demo-item">
-        <div class="demo-thumb">
-          {% if demo.embed_url %}
-          <iframe src="{{ demo.embed_url }}" title="{{ demo.title }}" allowfullscreen loading="lazy"></iframe>
-          {% else %}
-          <span>{{ demo.title }}</span>
-          {% endif %}
-        </div>
-        <div>
-          <h3>{{ demo.title }}</h3>
-          {% if demo.caption %}
-          <p>{{ demo.caption }}</p>
-          {% endif %}
-          {% if demo.links %}
-          <p class="demo-links">
-            <span>Links:</span>
-            {% for link in demo.links %}
-            <a href="{{ link.href }}" target="_blank" rel="noopener">{{ link.label }}</a>{% unless forloop.last %}<span aria-hidden="true">·</span>{% endunless %}
-            {% endfor %}
-          </p>
-          {% endif %}
-        </div>
-      </article>
-      {% endfor %}
-    </div>
-  </section>
-
-  {% comment %}
-  <section class="home-section" id="selected-publications" aria-labelledby="publications-title">
-    <div class="section-heading split-heading">
-      <div>
-        <h2 id="publications-title">Selected Publications</h2>
-        <p>A few papers anchor the research themes above. The full publication archive is one click away.</p>
+    <h2 id="video-demos-title">Video Demos</h2>
+    {% for demo in site.data.home.video_demos %}
+    {% assign publication = site.data.publications.items | where: 'id', demo.publication_id | first %}
+    {% assign paper = publication.links | where: 'label', 'paper' | first %}
+    <article class="research-demo" aria-labelledby="{{ demo.id }}-title">
+      <div class="demo-player" id="{{ demo.id }}-player">
+        <a class="demo-play" href="{{ demo.video_url }}" data-video-src="{{ demo.embed_url }}" data-video-title="{{ demo.title | escape }}" aria-label="Play {{ demo.title | escape }}">
+          <span class="play-symbol" aria-hidden="true">▶</span>
+          <span>Play research video</span>
+        </a>
       </div>
-      <a class="text-cta" href="/publications/">View all publications</a>
-    </div>
-
-    <div class="publication-list">
-      {% for publication in site.data.home.selected_publications %}
-      <article class="publication-item">
-        <p class="item-label">{{ publication.label }}</p>
-        <div>
-          <h3>{{ publication.title }}</h3>
-          <p class="paper-title">{{ publication.full_title }}</p>
-          <p class="venue">{{ publication.venue }}</p>
-          <p>{{ publication.summary }}</p>
-          <div class="inline-links">
-            {% for link in publication.links %}
-            <a href="{{ link.href }}">{{ link.label }}</a>
-            {% endfor %}
-          </div>
+      <div>
+        <h3 id="{{ demo.id }}-title">{{ demo.title }}</h3>
+        <p>{{ demo.caption }}</p>
+        <div class="inline-links">
+          <a href="{{ demo.video_url }}">Watch on YouTube</a>
+          {% if paper %}<a href="{{ paper.href }}">Read the paper</a>{% endif %}
         </div>
-      </article>
-      {% endfor %}
-    </div>
+      </div>
+    </article>
+    {% endfor %}
+    <p class="section-note"><a href="{{ '/publications/' | relative_url }}">View all publications</a></p>
   </section>
-  {% endcomment %}
 
-  <section class="home-section" id="teaching-mentoring" aria-labelledby="teaching-title">
-    <div class="section-heading full-width-heading">
-      <h2 id="teaching-title">Teaching &amp; Mentoring</h2>
-      <p>
-        My teaching is project-based and research-led: students learn algorithms, AI, and robotics by building systems that accumulate across the semester. As a postdoc and senior Ph.D. student, I have mentored over 20 graduate students and dozens of undergraduates, using a structured model that gives junior students early ownership and helps senior students develop as research leaders.
-      </p>
+  <section class="home-section" id="teaching" aria-labelledby="teaching-title">
+    <span class="compatibility-anchor" id="teaching-mentoring" aria-hidden="true"></span>
+    <div class="section-heading prose">
+      <h2 id="teaching-title">Teaching &amp; Outreach</h2>
+      <p>My teaching connects theory, implementation, and experimental evaluation through projects in algorithms, AI, and robotics.</p>
     </div>
-
-    <div class="teaching-list">
-      {% for card in site.data.home.teaching_cards %}
+    <div class="teaching-evidence">
       <article>
-        <h3>{{ card.title }}</h3>
-        <p>{{ card.description }}</p>
+        <h3>Teaching &amp; curriculum</h3>
+        <p>As an AI4ALL lead instructor, I developed introductory AI curriculum and led instructor teams. I also previously led curriculum development and taught Parasol Lab’s motion-planning course for new members.</p>
       </article>
-      {% endfor %}
+      <article>
+        <h3>Community outreach</h3>
+        <p>Through the Houston Robotics Club, I mentor community college and high school students on AI and robotics projects.</p>
+      </article>
+    </div>
+    <p class="teaching-interests"><strong>Teaching interests:</strong> algorithms, artificial intelligence, robotics, motion planning, and autonomous systems.</p>
+  </section>
+
+  <section class="home-section" id="translation" aria-labelledby="translation-title">
+    <div class="prose">
+      <h2 id="translation-title">Research Translation</h2>
+      <p>I have worked on industrial human–robot collaboration, founded Normandy Automation for robotic manufacturing, and led software development for automated materials analysis at Optigon.</p>
+      <a href="{{ '/cv/' | relative_url }}#cv-industry-translation">Industry experience and professional record</a>
     </div>
   </section>
 
-  <section class="home-section search-materials" aria-labelledby="faculty-search-title">
-    <div>
+  <section class="home-section faculty-contact" id="contact" aria-labelledby="faculty-search-title">
+    <div class="prose">
       <h2 id="faculty-search-title">Faculty Search</h2>
-      <p>
-        I am applying for tenure-track faculty positions in the 2026–27 cycle, especially in Computer Science, ECE, Robotics, and related programs building strength in robotics, AI planning, autonomous systems, human-robot interaction, and intelligent physical systems.
-      </p>
+      <p>I am seeking tenure-track faculty positions in Computer Science, ECE, Robotics, and related programs in the {{ site.data.profile.search_cycle }} cycle.</p>
     </div>
-    <nav class="profile-links" aria-label="Faculty search materials">
-      <a href="/assets/CV/james_motes_cv.pdf">CV</a>
-      <a href="mailto:jmotes2@illinois.edu">Email</a>
-    </nav>
+    {% include material-links.html context='contact' %}
   </section>
 </main>

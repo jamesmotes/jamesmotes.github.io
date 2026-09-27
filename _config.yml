@@ -1,6 +1,6 @@
 theme: jekyll-theme-minimal
 title: James D. Motes
-description: Adaptive planning for human-steerable robot teams
+description: James D. Motes develops multi-robot planning systems centered on selective coordination and accelerated computation. Research, publications, teaching, and mentoring.
 
 # Navigation
 header_pages:
@@ -10,6 +10,11 @@ header_pages:
 
 exclude:
   - LOCAL_PREVIEW.md
+  - REDESIGN_NOTES.md
+  - james_motes_webpage_redesign_brief.md
+  - research_statement_draft.pdf
+  - assets/documents/james_motes_research_statement.pdf
+  - assets/documents/james_motes_teaching_statement.pdf
   - motes_homepage_revisions_codex_prompt.md
   - motes_personal_website_codex_prompt.md
   - updated_cv.pdf
