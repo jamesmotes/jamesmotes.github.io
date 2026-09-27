@@ -11,6 +11,23 @@
   --shadow: 0 10px 26px rgba(44, 39, 31, 0.07);
 }
 
+/* Pearl & Slate palette for the homepage. */
+.home-page {
+  --paper: #f3f3f0;
+  --surface: #ffffff;
+  --surface-soft: #e9edf0;
+  --ink: #252b34;
+  --body-ink: #353e49;
+  --muted: #5d6773;
+  --line: #d2d8de;
+  --accent: #405e78;
+  --accent-soft: #e6edf3;
+  --clay: #2d465d;
+  --demo-line: #c3d0dc;
+  --demo-hover: #dce5ee;
+  --shadow: 0 10px 26px rgba(37, 43, 52, 0.07);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -193,7 +210,7 @@ header {
 
 .intro-pitch {
   margin: 18px 0 0;
-  color: #333531;
+  color: var(--body-ink, #333531);
   font-size: 1.02rem;
 }
 
@@ -284,7 +301,7 @@ header {
 .section-heading p,
 .home-section p,
 .page-hero p {
-  color: #383a35;
+  color: var(--body-ink, #383a35);
 }
 
 .split-heading,
@@ -1327,7 +1344,7 @@ ul li {
 .demo-player {
   aspect-ratio: 16 / 9;
   background: var(--accent-soft);
-  border: 1px solid #bdd3cc;
+  border: 1px solid var(--demo-line, #bdd3cc);
   border-radius: 3px;
 }
 
@@ -1351,7 +1368,7 @@ ul li {
 }
 
 .demo-play:hover {
-  background: #dce9e3;
+  background: var(--demo-hover, #dce9e3);
 }
 
 .play-symbol {

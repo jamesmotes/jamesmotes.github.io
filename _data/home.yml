@@ -1,8 +1,11 @@
 headline: "Selective coordination for scalable robot teams"
 summary: >-
-  I develop planning systems that decide which robots, tasks, and motions must be
-  planned together. My future work will extend these systems to learn from
-  experience and respond to human guidance.
+  I am a robotics researcher developing planning systems that enable robot teams
+  to work together on complex tasks. My work makes coordination practical as teams
+  grow by identifying which decisions require joint planning and accelerating the
+  necessary computation. I am extending these foundations through learning and
+  human–robot interaction, so teams can reuse experience and people can guide and
+  revise their plans.
 
 at_a_glance:
   - label: Research record

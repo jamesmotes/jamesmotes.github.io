@@ -51,6 +51,7 @@ body_class: standard-page
   <section class="cv-section" aria-labelledby="cv-talks">
     <h2 id="cv-talks">Talks</h2>
     <div class="cv-list">
+      <p><span class="cv-date">2026</span> <span class="cv-separator">-</span> Adaptive Robot Coordination: Lessons, Limitations, and Opportunities. Aggie Autonomous Robotics Research Group, Texas A&amp;M University</p>
       <p><span class="cv-date">2026</span> <span class="cv-separator">-</span> Lessons from Manufacturing Startups. AI Meets Robots &amp; Machines Seminar, University of Illinois Urbana-Champaign</p>
       <p><span class="cv-date">2024</span> <span class="cv-separator">-</span> Multi-Robot Task and Motion Planning in Hybrid State Spaces. Kavraki Lab, Rice University</p>
       <p><span class="cv-date">2019</span> <span class="cv-separator">-</span> Planning Motions and Tasks for Manipulators, Multi-Robot Systems and Biomolecules. Center for Autonomy Portfolio Discovery Workshop, UIUC</p>
@@ -73,7 +74,7 @@ body_class: standard-page
           <li>IEEE Robotics and Automation Letters</li>
           <li>IEEE Transactions on Robotics</li>
           <li>IEEE International Conference on Robotics and Automation</li>
-          <li>IEEE International Conference on Intelligent Robots and Systems</li>
+          <li>IEEE/RSJ International Conference on Intelligent Robots and Systems</li>
           <li>IEEE International Symposium on Multi-Robot and Multi-Agent Systems</li>
           <li>World Symposium on Algorithmic Foundations of Robotics</li>
           <li>International Journal of Robotics Research</li>
@@ -104,10 +105,10 @@ body_class: standard-page
     <h2 id="cv-industry-translation">Industry, Entrepreneurship &amp; Research Translation</h2>
     <div class="cv-list">
       <article class="cv-entry">
-        <p><span class="cv-date">2019-2023</span> <span class="cv-separator">-</span> Industrial Human-Robot Factory Collaboration, UIUC</p>
+        <p><span class="cv-date">2024-2026 (May)</span> <span class="cv-separator">-</span> Principal Software Engineer, Optigon Inc</p>
         <ul class="cv-sublist">
-          <li>Collaborated with Foxconn Interconnect Technologies and UIUC research groups led by Timothy Bretl and Katherine Driggs-Campbell on collaborative human-robot factory projects</li>
-          <li>Connected multi-robot task and motion planning research to industrial assembly and human-robot collaboration settings</li>
+          <li>Led software development for DOE SBIR-funded high-throughput, non-contact spectroscopic metrology and analysis tools for clean-energy materials, including perovskite photovoltaics</li>
+          <li>Developed machine learning analytical models of solar cell behavior</li>
         </ul>
       </article>
       <article class="cv-entry">
@@ -119,10 +120,10 @@ body_class: standard-page
         </ul>
       </article>
       <article class="cv-entry">
-        <p><span class="cv-date">2024-2026 (May)</span> <span class="cv-separator">-</span> Principal Software Engineer, Optigon Inc</p>
+        <p><span class="cv-date">2019-2023</span> <span class="cv-separator">-</span> Industrial Human-Robot Factory Collaboration, UIUC</p>
         <ul class="cv-sublist">
-          <li>Led software development for DOE SBIR-funded high-throughput, non-contact spectroscopic metrology and analysis tools for clean-energy materials, including perovskite photovoltaics</li>
-          <li>Developed machine learning analytical models of solar cell behavior</li>
+          <li>Collaborated with Foxconn Interconnect Technologies and UIUC research groups led by Timothy Bretl and Katherine Driggs-Campbell on collaborative human-robot factory projects</li>
+          <li>Connected multi-robot task and motion planning research to industrial assembly and human-robot collaboration settings</li>
         </ul>
       </article>
     </div>

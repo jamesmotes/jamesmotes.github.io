@@ -9,6 +9,7 @@ body_class: home-page
 {% include navigation.html %}
 
 <main class="home-main" id="main-content" tabindex="-1">
+  <p class="notice">I’m attending IROS 2026 and would be glad to meet to discuss robotics research and faculty opportunities.</p>
   <section class="profile-intro" aria-labelledby="profile-title">
     <div class="profile-nameplate">
       <figure class="profile-photo">
@@ -22,7 +23,7 @@ body_class: home-page
       </div>
     </div>
     <div class="profile-statement">
-      <p class="research-headline">{{ site.data.home.headline }}</p>
+      <p class="research-headline"><strong>{{ site.data.home.headline }}</strong></p>
       <p class="intro-pitch">{{ site.data.home.summary }}</p>
     </div>
   </section>

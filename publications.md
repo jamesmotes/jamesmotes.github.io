@@ -11,8 +11,8 @@ body_class: standard-page
   <header class="page-hero publications-hero">
     <h1>Publications</h1>
     <p class="source-note">
-      <span>Last checked: {{ site.data.publications.source.checked }}</span>
-      <span class="scholar-line"><a href="{{ site.data.publications.source.scholar_url }}">Google Scholar</a> may have the most current list.</span>
+      <span>Checked against the <a href="{{ site.data.publications.source.cv_url | relative_url }}">CV</a>: {{ site.data.publications.source.checked }}</span>
+      <span class="scholar-line"><a href="{{ site.data.publications.source.scholar_url }}">Google Scholar</a></span>
     </p>
   </header>
 
@@ -40,6 +40,12 @@ body_class: standard-page
           <span class="pub-entry-year">{{ publication.year }}</span>
           {% endif %}
         </div>
+        {% if publication.presentation %}
+        <div class="pub-venue">{{ publication.presentation | escape }}</div>
+        {% endif %}
+        {% if publication.note %}
+        <div class="pub-venue">{{ publication.note | escape }}</div>
+        {% endif %}
         <div class="pub-tags" aria-label="Research directions">
           {% for topic_slug in publication.tags %}
           {% assign topic_title = topic_slug %}
