@@ -2,6 +2,9 @@ theme: jekyll-theme-minimal
 title: James D. Motes
 description: James D. Motes develops multi-robot planning systems centered on selective coordination and accelerated computation. Research, publications, teaching, and mentoring.
 
+# Google Analytics 4 (loaded only in production builds).
+google_analytics: G-X807RF6LXQ
+
 # Navigation
 header_pages:
   - index.md
