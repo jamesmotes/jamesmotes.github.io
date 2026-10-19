@@ -4,7 +4,7 @@
     {% if material.id == 'email' %}
     <a href="mailto:{{ site.data.profile.email }}">{% if include.context == 'contact' %}{{ site.data.profile.email }}{% else %}{{ material.label }}{% endif %}</a>
     {% elsif material.url %}
-    <a href="{{ material.url | relative_url | escape }}">{{ material.label }}</a>
+    <a class="material-link material-link--{{ material.id }}" href="{{ material.url | relative_url | escape }}">{{ material.label }}</a>
     {% endif %}
   {% endif %}
   {% endfor %}

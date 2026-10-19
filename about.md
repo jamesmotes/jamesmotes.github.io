@@ -212,20 +212,20 @@ sitemap: false
         <p class="about-date">2019-2023</p>
         <div>
           <h3>Industrial human-robot factory collaboration</h3>
-          <p>I collaborated with Foxconn Interconnect Technologies and UIUC research groups led by Timothy Bretl and Katherine Driggs-Campbell on collaborative human-robot factory projects.</p>
+          <p>I collaborated with an industrial partner and UIUC research groups led by Timothy Bretl and Katherine Driggs-Campbell on collaborative human-robot factory projects.</p>
         </div>
       </article>
       <article class="about-timeline-item">
         <p class="about-date">2023-2025</p>
         <div>
-          <h3>Normandy Automation</h3>
+          <h3>Robotic manufacturing startup</h3>
           <p>As founder, I developed autonomous robotic manufacturing concepts for welding and CNC machine-tending workflows with minimal human reprogramming.</p>
         </div>
       </article>
       <article class="about-timeline-item">
         <p class="about-date">2024-2026 (May)</p>
         <div>
-          <h3>Optigon Inc.</h3>
+          <h3>Automated materials analysis</h3>
           <p>As principal software engineer, I lead software development for DOE SBIR-funded high-throughput spectroscopic metrology and analysis tools for clean-energy materials.</p>
         </div>
       </article>

@@ -1,126 +1,46 @@
-headline: "Selective coordination for scalable robot teams"
 summary: >-
-  I am a robotics researcher developing planning systems that enable robot teams
-  to work together on complex tasks. My work makes coordination practical as teams
-  grow by identifying which decisions require joint planning and accelerating the
-  necessary computation. I am extending these foundations through learning and
-  human–robot interaction, so teams can reuse experience and people can guide and
-  revise their plans.
+  I develop planning systems that help large robot teams work together efficiently.
+  My methods determine which robots need to coordinate and speed up motion planning.
+  Motivated by my industry and startup experience in automated manufacturing,
+  I am extending this work so robot teams can learn
+  from experience and adapt as people direct and participate in their work.
 
-at_a_glance:
-  - label: Research record
-    text: 16 peer-reviewed publications
-    href: /publications/
-  - label: Mentoring
-    text: 20+ graduate researchers mentored
-    href: /#leadership
-  - label: Research leadership
-    text: 3 open-source planning libraries led
-    href: /#leadership
-
-research_intro: >-
-  Robot teams could make manufacturing and logistics more flexible, but
-  coordinating more robots creates a rapidly growing planning problem. Planning
-  robots independently can miss necessary interactions; planning the entire team
-  jointly becomes expensive. My research determines what must be planned together
-  and makes the resulting computation efficient.
-
-foundations:
-  - id: selective-coordination
-    title: Selective Coordination in Multi-Robot Planning
-    subtitle: Decide what must be planned together.
-    body: >-
-      Robot teams need to coordinate, but not every decision needs to involve the whole
-      team. I develop representations and algorithms that use task requirements and
-      conflicts between planned motions to determine which robots, objects, and motion
-      segments should be considered together. They expand joint planning where needed
-      and preserve independent work elsewhere, rather than fixing the scope of
-      coordination in advance.
-    extension_label: Selected result
-    extension: >-
-      Lazy-DaSH planned rearrangements with eight robot arms and more than 40 objects.
-    publications:
-      - id: motes2023hypergraph
-        label: DaSH
-      - id: solis2024arc
-        label: ARC
-      - id: lee2025lazydash
-        label: Lazy-DaSH
-  - id: accelerated-infrastructure
-    title: Accelerated Planning Infrastructure
-    subtitle: Organize the necessary work—and avoid the rest.
-    body: >-
-      Smaller planning problems still require substantial search and collision
-      checking. I use the independence preserved by selective coordination to run
-      searches and repairs in parallel, and tailor collision checking to the
-      information each planning decision needs. These methods avoid unnecessary
-      geometric work and organize the remaining computation for efficient execution
-      on CPUs and GPUs, supporting larger robot teams and replanning in changing
-      environments.
-    extension_label: Selected result
-    extension: >-
-      On a benchmark with sixteen seven-joint robot arms, P-ARC achieved a median
-      planning time of 1.1 seconds—a 4× speedup over sequential ARC.
-    publications:
-      - id: motes2026parc
-        label: P-ARC
-      - id: motes2026milliseconds
-        label: Vector-Accelerated Planning
-      - id: ashur2024spite
-        label: SPITE
-
-future_intro: >-
-  My future research asks how robot teams can improve through experience and
-  collaborate with people, using these foundations to verify and revise plans.
-future_directions:
-  - id: learning-guided-coordination
-    title: Learning-Guided Coordination
-    subtitle: Use experience to guide coordination—and coordination to organize experience.
-    body: >-
-      I will study how experience from planning and execution can improve decisions about which 
-      robots should coordinate, when, and how. Learned policies or explicit reuse of past 
-      solutions can guide these decisions. In turn, selective coordination can organize 
-      experience around local interactions, providing structure for learning across tasks, 
-      teams, and environments. The planner will check feasibility and revise coordination 
-      or replan when guidance is insufficient.
-    extension_label: Starting point
-    extension: >-
-      Preliminary work explores reusable task-level coordination strategies and reuse
-      of solutions to local motion-planning problems.
-    publications:
-      - id: solis2024experience
-        label: Experience-Based Subproblem Planning
-  - id: interactive-planning
-    title: Interactive Planning
-    subtitle: Let people inspect and revise multi-robot plans without programming individual robots.
-    body: >-
-      I will study what information people and planners should exchange, and when to
-      use visualization, direct manipulation, or language. People might mark regions
-      to keep clear; planners could explain conflicts or alternatives. The challenge
-      is to translate this exchange into planning decisions, validate revisions, and
-      preserve unaffected tasks and motions.
-    extension_label: Starting point
-    extension: >-
-      ERUPT, developed with collaborators and students I mentored, lets users configure
-      workspaces and visualize planned robot motions in AR/VR.
-    publications:
-      - id: ngui2025erupt
-        label: ERUPT
-
-leadership_publications:
-  - id: lee2025lazydash
-    label: Lazy-DaSH
-  - id: mcbeth2026workspace
-    label: Workspace-Guided Planning
-  - id: qin2025karc
-    label: K-ARC
+results:
+  scale: "16 robots and 60 objects."
+  # Table I: median successful solve time, four-Panda Cage benchmark (N=50).
+  # https://arxiv.org/html/2604.23960v2#S1.T1
+  speed: "Generate motion plans for four seven-joint arms in 50 ms."
 
 video_demos:
   - id: lazy-dash-demo
-    title: "Lazy-DaSH: Multi-Robot Rearrangement"
-    caption: >-
-      Planning rearrangements without testing every possible robot–object combination
-      in advance.
-    embed_url: "https://www.youtube.com/embed/3eHOzTikcXc"
-    video_url: "https://www.youtube.com/watch?v=3eHOzTikcXc"
     publication_id: lee2025lazydash
+    paper_label: Lazy-DaSH
+    title: "Lazy-DaSH: Two-arm handoff"
+    heading: "Moving objects as a team"
+    points:
+      - "Objects must be placed on opposite shelf to force handoffs"
+      - "Planner recognizes blue objects must be placed before orange"
+      - "Paper scales to 16 robots and 60 objects"
+    image: "/assets/images/handoff-demo.jpg"
+    local_video: "/assets/videos/handoff-demo.mp4"
+  - id: parc-demo
+    publication_id: motes2026parc
+    paper_label: P-ARC
+    heading: "Faster planning for robot teams"
+    points:
+      - "Random start and goal gripper positions constrained to be inside the cage, emulating automobile manufacturing"
+      - "Leverage multicore parallelism on independent subproblems"
+      - "Generate motion plans for 16 seven-joint arms in 1.1 seconds"
+    title: "P-ARC: Motion planning for 16 robot arms"
+    local_video: "/assets/videos/p-arc-16.mp4"
+    image: "/assets/images/p-arc-16.jpg"
+  - id: erupt-demo
+    publication_id: ngui2025erupt
+    paper_label: ERUPT
+    heading: "Interfacing with robots"
+    points:
+      - "Use augmented and virtual reality to set up robot tasks and view planned motions"
+      - "Demo shows programming CNC tending in virtual reality"
+    title: "ERUPT: Robot planning in manufacturing"
+    local_video: "/assets/videos/erupt-imec.mp4"
+    image: "/assets/images/erupt-imec.jpg"

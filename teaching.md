@@ -2,45 +2,34 @@
 layout: page
 title: Teaching & Mentoring
 permalink: /teaching/
-body_class: standard-page
-published: false
-sitemap: false
+body_class: standard-page narrative-page
 ---
 
 {% include navigation.html %}
 
-<main class="page-shell">
+<main class="page-shell narrative-shell" id="main-content" tabindex="-1">
   <header class="page-hero">
-    <p class="eyebrow">Teaching &amp; Mentoring</p>
-    <h1>Project-based teaching and structured research mentorship.</h1>
-    <p>
-      This page will describe teaching philosophy, mentoring structure, courses James can teach, courses he wants to develop, and student research outcomes.
-    </p>
+    <h1>Teaching and mentoring</h1>
   </header>
 
-  <section class="page-section" aria-labelledby="teaching-structure">
-    <h2 id="teaching-structure">Initial sections</h2>
-    <div class="placeholder-grid">
-      <article class="placeholder-card">
-        <h3>Teaching philosophy</h3>
-        <p>Placeholder for project-based, research-led pedagogy that connects algorithms, AI, and robotics to working systems.</p>
-      </article>
-      <article class="placeholder-card">
-        <h3>Courses prepared to teach</h3>
-        <p>Placeholder for introductory AI, robotics, algorithms, motion planning, autonomous systems, and advanced seminars.</p>
-      </article>
-      <article class="placeholder-card">
-        <h3>New courses to develop</h3>
-        <p>Placeholder for future courses in algorithmic robotics, AI for multi-robot systems, and co-planning with embodied agents.</p>
-      </article>
-      <article class="placeholder-card">
-        <h3>Mentoring philosophy</h3>
-        <p>Placeholder for hierarchical lab mentoring, student ownership, writing practice, presentation practice, and leadership development.</p>
-      </article>
-      <article class="placeholder-card">
-        <h3>Student outcomes</h3>
-        <p>Placeholder for mentee trajectories, student-led papers, research independence, and cross-level mentoring outcomes.</p>
-      </article>
-    </div>
+  <section class="page-section" aria-labelledby="classroom">
+    <h2 id="classroom">Teaching experience</h2>
+    <h3>AI4ALL · 2021–2023</h3>
+    <p>I served as a teaching assistant, instructor, and then lead instructor for Discover AI, an introductory course combining artificial intelligence and ethics. I developed curriculum and led instructor teams across participating universities. Students completed team projects connecting data preparation, modeling, and ethical questions about AI applications.</p>
+    <h3>University of Illinois Urbana-Champaign · 2021</h3>
+    <p>I served as a teaching assistant for the Computer Science Ph.D. seminar.</p>
+    <h3>Parasol Lab · 2019–2021</h3>
+    <p>I helped develop and teach a motion-planning course for new lab members. Assignments introduced students to a shared research codebase, code review, and experimental documentation.</p>
+  </section>
+
+  <section class="page-section" aria-labelledby="mentoring">
+    <h2 id="mentoring">Research mentoring</h2>
+    <p>Across my graduate and postdoctoral work, I have mentored <strong>20+ graduate students</strong> and dozens of undergraduates. I served as the primary day-to-day research mentor for <strong>two Ph.D. and three master’s students through graduation</strong>. This work has contributed to <strong>11 student-led publications</strong>.</p>
+    <p>Since June 2026, I have served as a second supervisor for a Ph.D. student at King’s College London, working on learning by abstraction for multi-robot planning.</p>
+  </section>
+
+  <section class="page-section" aria-labelledby="outreach">
+    <h2 id="outreach">Community outreach</h2>
+    <p>Through the Houston Robotics Club, I mentor community college and high school students on AI and robotics projects. Students I have supported have gone on to STEM undergraduate programs and internships with local robotics companies.</p>
   </section>
 </main>

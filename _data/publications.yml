@@ -1,7 +1,7 @@
 source:
-  checked: "September 27, 2026"
+  checked: "October 16, 2026"
   scholar_url: "https://scholar.google.com/citations?user=O_Zne90AAAAJ&hl=en&oi=ao"
-  note: "Publication metadata follows the current CV (September 26, 2026)."
+  note: "Publication metadata follows the current CV (October 15, 2026)."
   cv_url: "/assets/CV/james_motes_cv.pdf"
 
 topics:
@@ -347,7 +347,7 @@ items:
     year: "2024"
     group: "Workshop papers and extended abstracts"
     note: "* Equal contribution."
-    tags: ["adaptive"]
+    tags: ["adaptive", "learning"]
     links:
       - label: "paper"
         href: "https://arxiv.org/abs/2409.10692"

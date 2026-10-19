@@ -7,5 +7,7 @@
   {% if research_extension != empty %}
   <p class="research-extension">{% if research_extension_label != empty %}<strong>{{ research_extension_label | escape }}:</strong> {% endif %}{{ research_extension | escape }}</p>
   {% endif %}
+  {% if include.topic.publications %}
   {% include publication-links.html publications=include.topic.publications %}
+  {% endif %}
 </article>
